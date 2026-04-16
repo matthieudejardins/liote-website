@@ -73,15 +73,11 @@
        SECTION 1 — HERO (video background)
        ============================================ -->
   <section class="hero" style="height: 60vh; min-height: 400px;" aria-label="Toiles Événementielles XXL">
-    <!-- YouTube video background -->
+    <!-- Local video background -->
     <div style="position: absolute; inset: 0; z-index: 0; overflow: hidden;">
-      <iframe
-        src="https://www.youtube.com/embed/RfycwIKrzRc?autoplay=1&mute=1&loop=1&playlist=RfycwIKrzRc&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
-        style="position: absolute; top: 50%; left: 50%; width: 120vw; height: 120vh; transform: translate(-50%, -50%); border: none; pointer-events: none;"
-        allow="autoplay; encrypted-media"
-        loading="lazy"
-        title="Toiles événementielles Lioté — vidéo de présentation">
-      </iframe>
+      <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); object-fit: cover;">
+        <source src="../assets/video/toiles-montage.mp4" type="video/mp4">
+      </video>
     </div>
 
     <!-- Overlay sombre -->
@@ -244,7 +240,7 @@
       <div class="grid-3">
         <!-- Case Study 1 -->
         <div class="card">
-          <img class="card__image" src="../assets/img/hero/hero-netflix-squid-game.jpg" alt="Toile Netflix Squid Game" loading="lazy">
+          <img class="card__image" src="../assets/img/expertise-toiles.jpg" alt="Toile événementielle XXL déployée sur une façade parisienne" loading="lazy">
           <div class="card__body">
             <span class="card__tag card__tag--magenta mb-2">Entertainment</span>
             <h3 class="card__title">Netflix — Squid Game</h3>
