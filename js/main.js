@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heroSlides[currentSlide].classList.remove('hero__slide--active');
       currentSlide = (currentSlide + 1) % heroSlides.length;
       heroSlides[currentSlide].classList.add('hero__slide--active');
-    }, 6000);
+    }, 3000);
   }
 
 
