@@ -64,6 +64,35 @@
       height: 100%;
       border: 0;
     }
+    /* White form card */
+    .form-card {
+      background-color: var(--white);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .form-card .text-muted {
+      color: #5A6478;
+    }
+    .form-card .form__label {
+      color: var(--navy);
+    }
+    .form-card .form__input,
+    .form-card .form__textarea,
+    .form-card .form__select {
+      background-color: var(--light-gray);
+      border: 1px solid var(--border-light);
+      color: var(--navy);
+    }
+    .form-card .form__input:focus,
+    .form-card .form__textarea:focus,
+    .form-card .form__select:focus {
+      border-color: var(--magenta);
+    }
+    .form-card .form__input::placeholder,
+    .form-card .form__textarea::placeholder {
+      color: #8899B0;
+    }
   </style>
 </head>
 
@@ -171,7 +200,7 @@
 
         <!-- RIGHT: Contact Form -->
         <div>
-          <div class="card" style="padding: 2rem;">
+          <div class="form-card">
             <p class="text-muted mb-4">Décrivez-nous votre projet en quelques lignes — type de campagne, emplacement souhaité, calendrier — et nous vous proposerons une recommandation personnalisée.</p>
 
             <form action="#" method="POST" novalidate>
