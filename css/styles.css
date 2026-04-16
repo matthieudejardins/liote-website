@@ -1280,7 +1280,7 @@ p {
 }
 
 .loading__logo {
-  max-width: 120px;
+  max-width: 240px;
   animation: pulse 1.5s ease-in-out infinite;
 }
 
