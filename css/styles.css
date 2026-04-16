@@ -366,6 +366,7 @@ p {
 
 .navbar__overlay .navbar__link {
   font-size: 20px;
+  color: var(--white);
 }
 
 
