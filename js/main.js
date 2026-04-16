@@ -252,20 +252,22 @@ document.addEventListener('DOMContentLoaded', () => {
          5f. Hero Content Fade on Scroll
          ------------------------------------------------------------------ */
 
-      const heroContent = document.querySelector('.hero__content');
+      // Only fade hero content on homepage (full-height hero)
       const hero = document.querySelector('.hero');
-
-      if (heroContent && hero) {
-        gsap.to(heroContent, {
-          opacity: 0,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: hero,
-            start: 'top top',
-            end: () => `${hero.offsetHeight * 0.3}px top`,
-            scrub: true,
-          },
-        });
+      if (hero && hero.style.height === '') {
+        const heroContent = hero.querySelector('.hero__content');
+        if (heroContent) {
+          gsap.to(heroContent, {
+            opacity: 0,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: hero,
+              start: 'top top',
+              end: () => `${hero.offsetHeight * 0.3}px top`,
+              scrub: true,
+            },
+          });
+        }
       }
 
     } // end reduced motion else

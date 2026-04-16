@@ -30,17 +30,18 @@
   <nav class="navbar navbar--solid" aria-label="Navigation principale">
     <div class="navbar__inner">
       <a href="../index.html" class="navbar__logo" aria-label="Lioté — Accueil">
-        <img src="../assets/img/logo-liote-white.png" alt="Lioté" width="120" height="40">
+        <img src="../assets/img/logo-liote-white.png" alt="Lioté" width="132" height="44">
       </a>
       <ul class="navbar__menu" role="menubar">
         <li role="none"><a href="solutions.html" class="navbar__link" role="menuitem">Solutions</a></li>
         <li role="none"><a href="notre-histoire.html" class="navbar__link" role="menuitem">Notre Histoire</a></li>
         <li role="none"><a href="renovation-patrimoine.html" class="navbar__link" role="menuitem">Patrimoine</a></li>
+        <li role="none"><a href="engagements.html" class="navbar__link" role="menuitem">Engagement RSE</a></li>
         <li role="none"><a href="equipe.html" class="navbar__link" role="menuitem">Notre Équipe</a></li>
       </ul>
       <div class="navbar__actions">
         <span class="navbar__phone" aria-label="Téléphone">01 46 03 01 73</span>
-        <a href="contact.html" class="navbar__cta btn btn--primary">Demander un devis</a>
+        <a href="contact.html" class="navbar__cta btn btn--primary">Un projet ?</a>
       </div>
       <button class="navbar__hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span>
@@ -62,11 +63,24 @@
   <!-- ============================================
        HERO
        ============================================ -->
-  <section id="main" class="section section--deep" style="min-height: 40vh; display: flex; align-items: center; padding-top: 8rem;" aria-label="Notre Histoire">
-    <div class="container text-center">
+  <section class="hero" id="main" style="height: 75vh; min-height: 500px;" aria-label="Notre Histoire">
+
+    <!-- Carousel d'images plein écran -->
+    <div class="hero__carousel">
+      <div class="hero__slide hero__slide--active" style="background-image: url('../assets/img/histoire-paris-calais.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('../assets/img/histoire-bon-marche.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('../assets/img/histoire-edf-lazare.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('../assets/img/histoire-total.jpg');"></div>
+    </div>
+
+    <!-- Overlay sombre -->
+    <div class="hero__overlay"></div>
+
+    <!-- Contenu -->
+    <div class="hero__content">
       <p class="eyebrow mb-2">À propos</p>
-      <h1>Notre Histoire</h1>
-      <p class="hero__subline" style="margin: 1.5rem auto 0;">Plus d'un siècle d'audace créative au service de la communication extérieure.</p>
+      <h1 class="hero__headline">Notre Histoire</h1>
+      <p class="hero__subline">Plus d'un siècle d'audace créative au service de la communication extérieure.</p>
     </div>
   </section>
 
@@ -76,7 +90,7 @@
   <section class="section section--navy">
     <div class="container-narrow">
       <p style="color: var(--text-muted); font-size: 18px; line-height: 1.8;">
-        Depuis plus d'un siècle, Lioté écrit l'histoire de la communication extérieure en France. Fondée en 1925, l'entreprise a traversé les décennies en se réinventant sans cesse, passant de la publicité lumineuse artisanale aux dispositifs digitaux les plus ambitieux. Des murs peints des années 1940 aux écrans DOOH du Palais des Congrès, des toits de Paris aux façades des plus grands monuments, Lioté a toujours su conjuguer audace créative et maîtrise technique pour transformer le paysage urbain en média vivant.
+        Depuis plus d'un siècle, Lioté écrit l'histoire de la communication extérieure en France. Fondée en 1925, l'entreprise a traversé les décennies en se réinventant sans cesse, passant de la publicité sur mur peint à la publicité lumineuse jusqu'aux dispositifs digitaux les plus ambitieux. Des murs peints des années 1940 aux écrans DOOH du Palais des Congrès, des toits de Paris aux façades des plus grands monuments, Lioté a toujours su conjuguer audace créative et maîtrise technique pour transformer le paysage urbain en média vivant.
       </p>
     </div>
   </section>
@@ -95,14 +109,14 @@
           <div class="timeline__dot"></div>
           <span class="timeline__year">1925</span>
           <h3 class="timeline__title">Fondation de Lioté</h3>
-          <p class="timeline__text">Jacques-André Lioté fonde l'entreprise à Paris, avec une spécialisation pionnière dans la publicité lumineuse. À une époque où l'affichage domine encore largement le marché, il fait le pari de la lumière pour capter l'attention dans la ville nocturne.</p>
+          <p class="timeline__text">Jacques-André Lioté fonde l'entreprise à Paris, pionnier dans la publicité lumineuse. À une époque où l'affichage domine encore largement le marché, il fait le pari de la lumière pour capter l'attention dans la ville nocturne.</p>
         </div>
 
         <!-- 1925 -->
         <div class="timeline__item">
           <div class="timeline__dot"></div>
           <span class="timeline__year">1925</span>
-          <h3 class="timeline__title">La Tour Eiffel s'illumine pour Citroën</h3>
+          <h3 class="timeline__title">La Tour Eiffel s'illumine pour Citroën pendant l'Exposition Universelle</h3>
           <p class="timeline__text">Lioté participe à l'un des événements publicitaires les plus spectaculaires du XXe siècle : l'habillage lumineux de la Tour Eiffel pour Citroën, avec 250 000 ampoules déployées sur la structure métallique. L'opération, visible à des dizaines de kilomètres, entre dans la légende de la communication extérieure.</p>
         </div>
 
@@ -142,8 +156,8 @@
         <div class="timeline__item">
           <div class="timeline__dot"></div>
           <span class="timeline__year">1998</span>
-          <h3 class="timeline__title">Le Stade de France célèbre la victoire</h3>
-          <p class="timeline__text">Pour la Coupe du Monde 1998, Lioté réalise une installation record au Stade de France : deux toiles géantes aux couleurs d'Adidas, visibles par des centaines de milliers de supporters. L'opération accompagne l'un des moments les plus marquants de l'histoire sportive française.</p>
+          <h3 class="timeline__title">Le Stade de France célèbre la victoire des Bleus</h3>
+          <p class="timeline__text">Pour la Coupe du Monde 1998, Lioté réalise une installation record au Stade de France : deux toiles géantes aux couleurs d'Adidas (l'une s'ils gagnent, l'autre s'ils perdent), visibles par des centaines de milliers de supporters. L'opération accompagne l'un des moments les plus marquants de l'histoire sportive française.</p>
         </div>
 
         <!-- 2007-2011 -->
@@ -151,7 +165,7 @@
           <div class="timeline__dot"></div>
           <span class="timeline__year">2007-2011</span>
           <h3 class="timeline__title">Alix Giraux et la nouvelle ère</h3>
-          <p class="timeline__text">Alix Giraux rejoint l'entreprise en 2007 et en devient la Directrice Générale en 2011, incarnant la troisième génération de dirigeants. Sous son impulsion, Lioté se diversifie vers l'ensemble des formats urbains : toiles monumentales, habillages de façades, bâches événementielles et dispositifs digitaux.</p>
+          <p class="timeline__text">Alix Giraux rejoint l'entreprise en 2007 et en devient la Directrice Générale en 2011, incarnant la troisième génération de dirigeants. Sous son impulsion, Lioté se diversifie vers l'ensemble des formats urbains : toiles monumentales, habillages de façades, et dispositifs digitaux.</p>
         </div>
 
         <!-- 2017 -->
@@ -159,7 +173,7 @@
           <div class="timeline__dot"></div>
           <span class="timeline__year">2017</span>
           <h3 class="timeline__title">DOOH et émotion au cœur de Paris</h3>
-          <p class="timeline__text">Lioté noue un partenariat majeur pour la gestion des espaces publicitaires DOOH au Palais des Congrès de Paris, marquant son entrée dans l'affichage digital. La même année, l'entreprise installe une toile mémoriale en hommage à Johnny Hallyday sur l'église de la Madeleine, vue par des centaines de milliers de Parisiens.</p>
+          <p class="timeline__text">Lioté noue un partenariat majeur avec Citiz Média pour la gestion des espaces publicitaires DOOH au Palais des Congrès de Paris, marquant son entrée dans l'affichage digital. La même année, l'entreprise installe une toile mémoriale en hommage à Johnny Hallyday sur l'église de la Madeleine, vue par des centaines de milliers de Parisiens.</p>
         </div>
 
         <!-- 2025 -->

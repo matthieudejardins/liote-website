@@ -36,17 +36,18 @@
   <nav class="navbar navbar--solid" aria-label="Navigation principale">
     <div class="navbar__inner">
       <a href="../index.html" class="navbar__logo" aria-label="Lioté — Accueil">
-        <img src="../assets/img/logo-liote-white.png" alt="Lioté" width="120" height="40">
+        <img src="../assets/img/logo-liote-white.png" alt="Lioté" width="132" height="44">
       </a>
       <ul class="navbar__menu" role="menubar">
         <li role="none"><a href="solutions.html" class="navbar__link" role="menuitem">Solutions</a></li>
         <li role="none"><a href="notre-histoire.html" class="navbar__link" role="menuitem">Notre Histoire</a></li>
         <li role="none"><a href="renovation-patrimoine.html" class="navbar__link" role="menuitem">Patrimoine</a></li>
+        <li role="none"><a href="engagements.html" class="navbar__link" role="menuitem">Engagement RSE</a></li>
         <li role="none"><a href="equipe.html" class="navbar__link" role="menuitem">Notre Équipe</a></li>
       </ul>
       <div class="navbar__actions">
         <span class="navbar__phone" aria-label="Téléphone">01 46 03 01 73</span>
-        <a href="contact.html" class="navbar__cta btn btn--primary">Demander un devis</a>
+        <a href="contact.html" class="navbar__cta btn btn--primary">Un projet ?</a>
       </div>
       <button class="navbar__hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span>
@@ -69,24 +70,24 @@
   <!-- ============================================
        SECTION 1 — HERO (video background)
        ============================================ -->
-  <section class="hero" style="height: 60vh; min-height: 400px;" aria-label="Affichage Premium au Palais des Congrès">
-    <!-- Background image -->
-    <div class="hero__carousel">
-      <div class="hero__slide hero__slide--active" style="background-image: url('../assets/img/pdc-exterior.jpg');"></div>
-      <div class="hero__slide" style="background-image: url('../assets/img/pdc-signaletique.jpg');"></div>
-      <div class="hero__slide" style="background-image: url('../assets/img/pdc-bioderma.jpg');"></div>
+  <section class="hero" style="height: 75vh; min-height: 500px;" aria-label="Affichage Premium au Palais des Congrès">
+    <!-- Local video background -->
+    <div style="position: absolute; inset: 0; z-index: 0; overflow: hidden;">
+      <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); object-fit: cover;">
+        <source src="../assets/video/affichage-premium.mp4" type="video/mp4">
+      </video>
     </div>
 
     <!-- Overlay sombre -->
     <div class="hero__overlay"></div>
 
     <!-- Contenu -->
-    <div class="hero__content">
+    <div class="hero__content" style="z-index: 2;">
       <span class="eyebrow mb-2">Solutions</span>
       <h1 class="hero__headline">Affichage Premium</h1>
       <p class="hero__subline">Signalétique, DOOH et habillage sur mesure au Palais des Congrès de Paris.</p>
       <div class="hero__ctas">
-        <a href="contact.html" class="btn btn--primary">Demander un devis</a>
+        <a href="contact.html" class="btn btn--primary">Nous contacter</a>
         <a href="#overview" class="btn btn--ghost">Découvrir</a>
       </div>
     </div>
@@ -104,7 +105,7 @@
         <div>
           <span class="eyebrow mb-2">Présentation</span>
           <h2 class="mb-4">Le Palais des Congrès, vitrine de votre marque</h2>
-          <p class="mb-3">Lioté déploie des solutions de signalétique et d'affichage premium au Palais des Congrès de Paris, incluant un adhésivage XXL sur la façade, des habillages d'ascenseurs et des dispositifs sur colonnes. Ce maillage stratégique garantit une répétition optimale de vos messages pour une mémorisation maximale auprès des 5 millions de visiteurs annuels.</p>
+          <p class="mb-3">Lioté déploie des solutions de signalétique et d'affichage premium au Palais des Congrès de Paris, incluant un adhésivage XXL sur la façade, des habillages d'ascenseurs et d'escalators. Ce maillage stratégique garantit une répétition optimale de vos messages pour une mémorisation maximale auprès des 5 millions de visiteurs annuels.</p>
           <p class="text-muted">Un écosystème publicitaire immersif pour transformer chaque point de passage en un levier de mémorisation puissant.</p>
         </div>
 
@@ -117,7 +118,7 @@
           </div>
           <div class="mb-4">
             <div class="stat-number">24</div>
-            <div class="stat-label">écrans digitaux stratégiques</div>
+            <div class="stat-label">écrans digitaux 70"</div>
           </div>
           <div class="mb-4">
             <div class="stat-number">170</div>
@@ -140,7 +141,7 @@
   <section class="section section--deep" aria-label="Dispositifs digitaux et signalétique">
     <div class="container">
       <span class="eyebrow mb-2">Dispositifs</span>
-      <h2 class="mb-5">Un maillage digital et signalétique complet</h2>
+      <h2 class="mb-5">Un maillage digital et signalétique omniprésent</h2>
 
       <div class="grid-3">
         <!-- Card 1 -->
@@ -173,22 +174,6 @@
 
 
   <!-- ============================================
-       SECTION 3b — VIDEO
-       ============================================ -->
-  <section class="section section--deep" aria-label="Vidéo">
-    <div class="container" style="max-width: 800px;">
-      <div class="text-center mb-4">
-        <span class="eyebrow mb-2">En vidéo</span>
-        <h2>Le Palais des Congrès en action</h2>
-      </div>
-      <video controls playsinline preload="metadata" style="width: 100%; border-radius: 12px; background: var(--navy-deep);">
-        <source src="../assets/video/affichage-premium.mp4" type="video/mp4">
-        Votre navigateur ne prend pas en charge la lecture vidéo.
-      </video>
-    </div>
-  </section>
-
-  <!-- ============================================
        SECTION 4 — PROCESSUS
        ============================================ -->
   <section class="section section--navy" aria-label="Comment ça marche">
@@ -201,7 +186,7 @@
         <div style="text-align: center;">
           <div class="stat-number mb-2">01</div>
           <h4 class="mb-2">Audit &amp; recommandation</h4>
-          <p class="text-muted" style="font-size: 14px;">Analyse de vos objectifs et recommandation des dispositifs adaptés parmi les formats disponibles au Palais des Congrès.</p>
+          <p class="text-muted" style="font-size: 14px;">Analyse de vos objectifs et recommandation des dispositifs adaptés parmi les formats disponibles.</p>
         </div>
         <!-- Étape 2 -->
         <div style="text-align: center;">
@@ -213,13 +198,13 @@
         <div style="text-align: center;">
           <div class="stat-number mb-2">03</div>
           <h4 class="mb-2">Production &amp; installation</h4>
-          <p class="text-muted" style="font-size: 14px;">Fabrication, impression et pose par nos équipes spécialisées, en coordination avec les équipes du Palais des Congrès.</p>
+          <p class="text-muted" style="font-size: 14px;">Fabrication, impression et pose par nos équipes spécialisées, en coordination avec les équipes du VIPARIS.</p>
         </div>
         <!-- Étape 4 -->
         <div style="text-align: center;">
           <div class="stat-number mb-2">04</div>
           <h4 class="mb-2">Suivi &amp; reporting</h4>
-          <p class="text-muted" style="font-size: 14px;">Monitoring de la campagne, données d'audience et reporting détaillé pour mesurer l'impact de votre dispositif.</p>
+          <p class="text-muted" style="font-size: 14px;">Monitoring de la campagne, rapports de logs et reporting détaillé pour mesurer l'impact de votre dispositif.</p>
         </div>
       </div>
     </div>
@@ -231,9 +216,9 @@
        ============================================ -->
   <section class="section section--white" aria-label="Pourquoi choisir le Palais des Congrès">
     <div class="container">
-      <span class="eyebrow mb-2">Pourquoi le Palais des Congrès</span>
+      <span class="eyebrow mb-2">Pourquoi le Palais des Congrès ?</span>
       <h2 class="mb-4">Un carrefour événementiel international</h2>
-      <p class="mb-3" style="max-width: 800px;">Au fil des décennies, la Porte Maillot s'est imposée comme un véritable carrefour événementiel de l'ouest parisien, vibrant au rythme du Palais des Congrès de Paris, inauguré en 1974. Ce temple du spectacle et des grands rendez-vous nationaux et internationaux attire chaque année plus de 600 000 visiteurs, congressistes et spectateurs.</p>
+      <p class="mb-3" style="max-width: 800px;">Au fil des décennies, la Porte Maillot s'est imposée comme un véritable carrefour événementiel de l'ouest parisien, vibrant au rythme du Palais des Congrès de Paris, inauguré en 1974. Ce temple du spectacle synonyme de grands rendez-vous nationaux &amp; internationaux attire chaque année plus de 600 000 visiteurs, congressistes et spectateurs.</p>
       <p class="mb-3" style="max-width: 800px;">Pas moins de 170 événements dont 56 congrès, 36 spectacles, 66 événements d'entreprises et 13 salons y ont été organisés l'an dernier. Idéalement situé entre quartiers d'affaires, hôtels de luxe et pôles touristiques, il offre une visibilité unique au sein d'un véritable centre d'influence international.</p>
       <div class="mt-4">
         <a href="contact.html" class="btn btn--dark">Réserver votre campagne</a>
@@ -248,12 +233,12 @@
   <section class="section section--deep" aria-label="Réalisations liées">
     <div class="container">
       <span class="eyebrow mb-2">Réalisations</span>
-      <h2 class="mb-5">Nos projets au Palais des Congrès</h2>
+      <h2 class="mb-5">Nos projets à l'honneur</h2>
 
       <div class="grid-3">
         <!-- Case Study 1 -->
         <div class="card">
-          <img class="card__image" src="../assets/img/pdc-signaletique.jpg" alt="Signalétique au Palais des Congrès" loading="lazy">
+          <img class="card__image" src="../assets/img/pdc-pierre-fabre.jpg" alt="Signalétique Pierre Fabre au Palais des Congrès" loading="lazy">
           <div class="card__body">
             <span class="card__tag card__tag--cyan mb-2">Signalétique</span>
             <h3 class="card__title">Dispositif signalétique complet</h3>
@@ -265,13 +250,13 @@
           <img class="card__image" src="../assets/img/pdc-bioderma.jpg" alt="Habillage Bioderma" loading="lazy">
           <div class="card__body">
             <span class="card__tag card__tag--magenta mb-2">Habillage</span>
-            <h3 class="card__title">Bioderma — Congrès IMCAS</h3>
+            <h3 class="card__title">Bioderma — Congrès JDP</h3>
             <p class="card__text">Habillage complet des espaces de circulation pour le congrès international de dermatologie.</p>
           </div>
         </div>
         <!-- Case Study 3 -->
         <div class="card">
-          <img class="card__image" src="../assets/img/pdc-imcas.jpg" alt="IMCAS Congress signalétique" loading="lazy">
+          <img class="card__image" src="../assets/img/pdc-signaletique.jpg" alt="IMCAS World Congress signalétique" loading="lazy">
           <div class="card__body">
             <span class="card__tag card__tag--cyan mb-2">Digital</span>
             <h3 class="card__title">IMCAS World Congress</h3>
@@ -295,7 +280,7 @@
         <div class="faq__item">
           <button class="faq__question" aria-expanded="false">Quels formats d'écrans sont disponibles au Palais des Congrès ?</button>
           <div class="faq__answer">
-            <p>Le Palais des Congrès propose 24 écrans digitaux de différents formats, positionnés aux points de passage stratégiques : hall d'entrée, ascenseurs, escalators, couloirs de circulation. Chaque écran est calibré pour maximiser la visibilité selon son emplacement.</p>
+            <p>24 écrans digitaux 70", positionnés à tous les points de passage stratégiques : hall d'entrée, ascenseurs, escalators, couloirs de circulation du congrès. Chaque écran est calibré pour maximiser la visibilité selon son emplacement.</p>
           </div>
         </div>
         <div class="faq__item">
@@ -336,7 +321,7 @@
       <p>Contactez notre équipe pour une recommandation personnalisée.</p>
       <div style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap;">
         <a href="tel:+33146030173" class="btn btn--ghost">01 46 03 01 73</a>
-        <a href="contact.html" class="btn btn--ghost">Demander un devis</a>
+        <a href="contact.html" class="btn btn--ghost">Un projet ?</a>
       </div>
     </div>
   </section>

@@ -42,6 +42,8 @@
       border: 1px solid var(--border-dark, rgba(255,255,255,0.08));
       border-radius: 12px;
       padding: 2rem;
+      display: flex;
+      flex-direction: column;
     }
     .eco-card h4 {
       font-family: var(--font-ui);
@@ -49,6 +51,7 @@
       font-weight: 600;
       color: var(--cyan);
       margin-bottom: 0.75rem;
+      min-height: 2.5em;
     }
     .eco-card p {
       color: var(--text-muted);
@@ -106,17 +109,18 @@
   <nav class="navbar navbar--solid" aria-label="Navigation principale">
     <div class="navbar__inner">
       <a href="../index.html" class="navbar__logo" aria-label="Lioté — Accueil">
-        <img src="../assets/img/logo-liote-white.png" alt="Lioté" width="120" height="40">
+        <img src="../assets/img/logo-liote-white.png" alt="Lioté" width="132" height="44">
       </a>
       <ul class="navbar__menu" role="menubar">
         <li role="none"><a href="solutions.html" class="navbar__link" role="menuitem">Solutions</a></li>
         <li role="none"><a href="notre-histoire.html" class="navbar__link" role="menuitem">Notre Histoire</a></li>
         <li role="none"><a href="renovation-patrimoine.html" class="navbar__link" role="menuitem">Patrimoine</a></li>
+        <li role="none"><a href="engagements.html" class="navbar__link" role="menuitem">Engagement RSE</a></li>
         <li role="none"><a href="equipe.html" class="navbar__link" role="menuitem">Notre Équipe</a></li>
       </ul>
       <div class="navbar__actions">
         <span class="navbar__phone" aria-label="Téléphone">01 46 03 01 73</span>
-        <a href="contact.html" class="navbar__cta btn btn--primary">Demander un devis</a>
+        <a href="contact.html" class="navbar__cta btn btn--primary">Un projet ?</a>
       </div>
       <button class="navbar__hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -155,12 +159,13 @@
     <div class="container">
       <p class="eyebrow">Patrimoine</p>
       <h2 class="section__title">Nos toiles financent la restauration du patrimoine</h2>
-      <p class="section__intro">Les dispositifs publicitaires que nous installons sur les échafaudages de chantier ne sont pas de simples supports de communication : ils participent directement au financement de la restauration des monuments et bâtiments historiques français. L'Arc de Triomphe, l'église de la Madeleine, l'Opéra Garnier — autant d'édifices emblématiques dont la rénovation a été en partie financée grâce à nos campagnes.</p>
+      <p class="section__intro">Les dispositifs publicitaires que nous installons sur les échafaudages de chantier ne sont pas de simples supports de communication : ils participent directement au financement de la restauration des monuments et bâtiments historiques français. L'Arc de Triomphe, l'église de la Madeleine, l'Opéra Garnier, les Jardins du Palais Royal, autant d'édifices emblématiques dont la rénovation a été en partie financée grâce à nos campagnes publicitaires.</p>
       <p class="section__intro">En choisissant Lioté, chaque annonceur contribue concrètement à la sauvegarde du patrimoine architectural français.</p>
       <ul class="monuments-list">
         <li>Arc de Triomphe</li>
         <li>Église de la Madeleine</li>
         <li>Opéra Garnier</li>
+        <li>Jardins du Palais Royal</li>
       </ul>
     </div>
   </section>
@@ -169,19 +174,45 @@
   <section class="section section--navy" aria-label="Partenariat Bilum">
     <div class="container">
       <p class="eyebrow">Économie circulaire</p>
-      <h2 class="section__title">Zéro déchet : nos bâches deviennent des accessoires</h2>
-      <div class="grid-2" style="align-items: center; margin-top: 2rem;">
-        <div>
-          <p style="color: var(--text-muted); font-size: 16px; line-height: 1.8; margin-bottom: 1.5rem;">Que deviennent nos toiles une fois la campagne terminée ? Grâce à notre partenariat avec <strong style="color: var(--white);">Bilum</strong>, pionnier français de l'upcycling, elles entament une seconde vie. Sacs, trousses, accessoires de mode — chaque bâche est transformée en pièce unique, fabriquée en France dans des ateliers d'insertion.</p>
-          <div class="callout-box">
-            <p><strong>Notre philosophie zéro déchet :</strong> aucune toile Lioté ne finit en décharge. 100 % de nos bâches sont confiées à Bilum pour être upcyclées en accessoires fabriqués en France, dans des ateliers d'insertion professionnelle.</p>
-          </div>
+      <h2 class="section__title">Zéro déchet : nos toiles deviennent des accessoires</h2>
+      <div style="margin-top: 2rem;">
+        <p style="color: var(--text-muted); font-size: 16px; line-height: 1.8; margin-bottom: 1.5rem;">Que deviennent nos toiles une fois la campagne terminée ? Grâce à notre partenariat avec <a href="https://www.bilum.fr/" target="_blank" rel="noopener noreferrer" style="color: var(--white); text-decoration: underline;"><strong>Bilum</strong></a>, pionnier français de l'upcycling, elles entament une seconde vie. Sacs, trousses, accessoires de mode, chaque toile est transformée en pièce unique, fabriquée en France dans des ateliers d'insertion.</p>
+        <div class="callout-box" style="margin-bottom: 2.5rem;">
+          <p><strong>Notre philosophie zéro déchet :</strong> certaines de nos toiles sont confiées à Bilum pour être upcyclées en accessoires fabriqués en France, dans des ateliers d'insertion professionnelle.</p>
         </div>
-        <div>
-          <img src="../assets/img/bilum-loreal.jpg" alt="Accessoires upcyclés par Bilum à partir de bâches publicitaires L'Oréal" loading="lazy" style="width: 100%; border-radius: 12px;">
-          <p style="font-size: 13px; color: var(--text-muted); margin-top: 0.75rem; text-align: center;">Nos toiles monumentales trouvent une seconde vie grâce à Bilum.</p>
+        <img src="../assets/img/bilum-loreal.jpg" alt="Accessoires upcyclés par Bilum à partir de bâches publicitaires L'Oréal" loading="lazy" style="width: 100%; border-radius: 12px;">
+        <p style="font-size: 13px; color: var(--text-muted); margin-top: 0.75rem; text-align: center;">Nos toiles monumentales trouvent une seconde vie grâce à Bilum.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3b: UPE — TRANSITION ÉCOLOGIQUE -->
+  <section class="section section--deep" aria-label="Transition écologique UPE">
+    <div class="container">
+      <p class="eyebrow">Transition écologique</p>
+      <h2 class="section__title">Membre de l'UPE : une feuille de route ambitieuse pour le climat</h2>
+      <p class="section__intro">Lioté est membre de l'Union de la Publicité Extérieure (UPE), qui représente 80 % du secteur et a formalisé des engagements concrets en matière de transition écologique.</p>
+
+      <div class="eco-grid">
+        <div class="eco-card">
+          <h4>-20 % de CO2 d'ici 2025</h4>
+          <p>Par rapport à 2019, avec un objectif de -48 % à l'horizon 2030 et la neutralité carbone d'ici 2050.</p>
+        </div>
+        <div class="eco-card">
+          <h4>Promotion des comportements durables</h4>
+          <p>Diffusion de campagnes nationales gratuites valorisant les éco-gestes et la transition écologique.</p>
+        </div>
+        <div class="eco-card">
+          <h4>Soutien aux grandes causes</h4>
+          <p>Allocation d'espace publicitaire annuel significatif aux initiatives environnementales et de biodiversité.</p>
+        </div>
+        <div class="eco-card">
+          <h4>Conditions préférentielles « Green »</h4>
+          <p>Tarifs spécifiques et bonus d'espace pour les campagnes promouvant des produits durables ou labellisés.</p>
         </div>
       </div>
+
+      <p style="color: var(--text-muted); font-size: 15px; margin-top: 2rem;">Un comité indépendant assure le suivi de l'exécution de ces engagements. <a href="blog/transition-ecologique.html" style="color: var(--cyan);">Lire l'article complet &rarr;</a></p>
     </div>
   </section>
 
@@ -197,7 +228,7 @@
           <p>Nos systèmes d'éclairage utilisent exclusivement des LED à faible consommation énergétique, réduisant significativement l'empreinte carbone de chaque installation.</p>
         </div>
         <div class="eco-card">
-          <h4>Bâches micro-perforées</h4>
+          <h4>Toiles micro-perforées</h4>
           <p>Nos toiles laissent passer la lumière naturelle, préservant le confort des occupants des bâtiments et limitant le recours à l'éclairage artificiel à l'intérieur.</p>
         </div>
         <div class="eco-card">
@@ -223,7 +254,7 @@
     <div class="container" style="text-align: center;">
       <h2 class="section__title">Engagez-vous avec nous</h2>
       <p class="section__intro">Vous souhaitez associer votre marque à une communication urbaine responsable ? Parlons de votre projet.</p>
-      <a href="contact.html" class="btn btn--primary" style="margin-top: 1.5rem;">Demander un devis</a>
+      <a href="contact.html" class="btn btn--primary" style="margin-top: 1.5rem;">Un projet ?</a>
     </div>
   </section>
 
