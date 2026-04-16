@@ -1575,6 +1575,11 @@ summary,
     grid-template-columns: 1fr;
   }
 
+  /* Hero slides: center on mobile */
+  .hero__slide {
+    background-position: center center !important;
+  }
+
   /* Navbar: show hamburger, hide desktop menu + phone */
   .navbar__menu {
     display: none;
