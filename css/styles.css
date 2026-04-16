@@ -1034,6 +1034,7 @@ p {
   font-size: 14px;
   color: #5A6478;
   max-width: 280px;
+  margin-bottom: 2rem;
 }
 
 .footer__heading {
