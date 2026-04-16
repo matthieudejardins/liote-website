@@ -1575,9 +1575,9 @@ summary,
     grid-template-columns: 1fr;
   }
 
-  /* Hero slides: center on mobile */
+  /* Hero slides: respect inline background-position on mobile */
   .hero__slide {
-    background-position: center center !important;
+    background-position: center center;
   }
 
   /* Navbar: show hamburger, hide desktop menu + phone */
