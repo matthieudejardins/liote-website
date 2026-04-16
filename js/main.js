@@ -446,4 +446,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ========================================================================
+     11. COOKIE CONSENT BANNER
+     ======================================================================== */
+
+  if (!localStorage.getItem('liote-cookies')) {
+    const banner = document.createElement('div');
+    banner.className = 'cookie-banner cookie-banner--visible';
+    banner.innerHTML = `
+      <p class="cookie-banner__text">
+        Ce site utilise des cookies pour améliorer votre expérience de navigation.
+        <a href="${window.location.pathname.includes('/pages/') ? (window.location.pathname.includes('/blog/') ? '../mentions-legales.html' : 'mentions-legales.html') : 'pages/mentions-legales.html'}">En savoir plus</a>
+      </p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept">Accepter</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline">Refuser</button>
+      </div>
+    `;
+    document.body.appendChild(banner);
+
+    banner.querySelector('.cookie-banner__btn--accept').addEventListener('click', () => {
+      localStorage.setItem('liote-cookies', 'accepted');
+      banner.classList.remove('cookie-banner--visible');
+    });
+
+    banner.querySelector('.cookie-banner__btn--decline').addEventListener('click', () => {
+      localStorage.setItem('liote-cookies', 'declined');
+      banner.classList.remove('cookie-banner--visible');
+    });
+  }
+
 }); // end DOMContentLoaded

@@ -1379,6 +1379,81 @@ summary,
 
 
 /* ==========================================================================
+   19b. COOKIE CONSENT BANNER
+   ========================================================================== */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  background-color: var(--white);
+  border-top: 1px solid var(--border-light);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cookie-banner--visible {
+  display: flex;
+}
+
+.cookie-banner__text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--navy);
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.cookie-banner__text a {
+  color: var(--magenta);
+  text-decoration: underline;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.cookie-banner__btn {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.cookie-banner__btn--accept {
+  background-color: var(--magenta);
+  color: var(--white);
+}
+
+.cookie-banner__btn--accept:hover {
+  background-color: #d4177e;
+}
+
+.cookie-banner__btn--decline {
+  background-color: transparent;
+  color: var(--navy);
+  border: 1px solid var(--border-light);
+}
+
+.cookie-banner__btn--decline:hover {
+  border-color: var(--navy);
+}
+
+
+/* ==========================================================================
    20. KEYFRAME ANIMATIONS
    ========================================================================== */
 
