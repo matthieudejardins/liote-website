@@ -21,8 +21,8 @@
   --navy:         #1B2A4A;
   --navy-deep:    #111D33;
   --navy-card:    #1F3054;
-  --magenta:      #E91E8C;
-  --cyan:         #00B4D8;
+  --magenta:      #C91A7A;
+  --cyan:         #0095B3;
   --gold:         #B45309;
   --gold-light:   #D4A044;
 
@@ -43,7 +43,7 @@
   /* Transitions */
   --transition-fast:  0.3s ease;
   --transition-med:   0.4s ease;
-  --transition-fluid: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fluid: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Focus ring */
   --focus-ring:   0 0 0 3px rgba(0, 180, 216, 0.5);
@@ -294,6 +294,7 @@ p {
   color: var(--navy);
   transition: color var(--transition-fast);
   text-decoration: none;
+  padding: 0.75rem 0.5rem;
   /* No text-transform uppercase per client request */
 }
 
@@ -305,7 +306,8 @@ p {
   display: inline-block;
   background-color: var(--magenta);
   color: var(--white);
-  padding: 0.6rem 1.5rem;
+  padding: 0.75rem 1.5rem;
+  min-height: 44px;
   border-radius: 8px;
   font-family: var(--font-ui);
   font-size: 14px;
@@ -422,6 +424,20 @@ p {
 
 .btn--dark:hover {
   background-color: var(--navy-deep);
+}
+
+/* Disabled / loading state */
+.btn[disabled],
+.btn.is-loading {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Form error state */
+.form__input--error {
+  border-color: #DC2626 !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
 /* Arrow variant */
@@ -644,7 +660,7 @@ p {
   display: inline-block;
   padding: 0.25rem 0.75rem;
   border-radius: 100px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   /* text-transform: none — no all-caps per client request */
   letter-spacing: 0.08em;
@@ -1247,6 +1263,7 @@ p {
 .form__textarea:focus,
 .form__select:focus {
   border-color: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(0, 149, 179, 0.15);
   outline: none;
 }
 
