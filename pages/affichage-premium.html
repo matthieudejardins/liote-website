@@ -72,23 +72,19 @@
   <!-- ============================================
        SECTION 1 — HERO (video background)
        ============================================ -->
-  <section class="hero" style="height: 60vh; min-height: 400px;" aria-label="Affichage Premium au Palais des Congrès">
-    <!-- YouTube video background -->
-    <div style="position: absolute; inset: 0; z-index: 0; overflow: hidden;">
-      <iframe
-        src="https://www.youtube.com/embed/feIQkTtfZII?autoplay=1&mute=1&loop=1&playlist=feIQkTtfZII&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
-        style="position: absolute; top: 50%; left: 50%; width: 120vw; height: 120vh; transform: translate(-50%, -50%); border: none; pointer-events: none;"
-        allow="autoplay; encrypted-media"
-        loading="lazy"
-        title="Affichage premium Lioté au Palais des Congrès — vidéo de présentation">
-      </iframe>
+  <section class="hero" aria-label="Affichage Premium au Palais des Congrès">
+    <!-- Background image -->
+    <div class="hero__carousel">
+      <div class="hero__slide hero__slide--active" style="background-image: url('../assets/img/pdc-exterior.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('../assets/img/pdc-signaletique.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('../assets/img/pdc-bioderma.jpg');"></div>
     </div>
 
     <!-- Overlay sombre -->
     <div class="hero__overlay"></div>
 
     <!-- Contenu -->
-    <div class="hero__content" style="z-index: 2;">
+    <div class="hero__content">
       <span class="eyebrow mb-2">Solutions</span>
       <h1 class="hero__headline">Affichage Premium</h1>
       <p class="hero__subline">Signalétique, DOOH et habillage sur mesure au Palais des Congrès de Paris.</p>
@@ -178,6 +174,21 @@
     </div>
   </section>
 
+
+  <!-- ============================================
+       SECTION 3b — VIDEO
+       ============================================ -->
+  <section class="section section--deep" aria-label="Vidéo">
+    <div class="container" style="max-width: 800px;">
+      <div class="text-center mb-4">
+        <span class="eyebrow mb-2">En vidéo</span>
+        <h2>Le Palais des Congrès en action</h2>
+      </div>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+        <iframe src="https://www.youtube.com/embed/feIQkTtfZII?rel=0" title="Habillage monumental et DOOH au Palais des Congrès de Paris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+  </section>
 
   <!-- ============================================
        SECTION 4 — PROCESSUS
