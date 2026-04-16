@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title & Meta -->
+  <title>Lioté — Scénographie urbaine & publicité XXL depuis 1925</title>
+  <meta name="description" content="Lioté transforme les façades parisiennes en scénographies urbaines d'exception depuis 1925. Toiles événementielles, DOOH, publicité lumineuse et signalétique.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lioté — Scénographie urbaine & publicité XXL depuis 1925">
+  <meta property="og:description" content="Lioté transforme les façades parisiennes en scénographies urbaines d'exception depuis 1925. Toiles événementielles, DOOH, publicité lumineuse et signalétique.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-liote.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://liote.fr">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org Organization JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lioté",
+    "url": "https://liote.fr",
+    "logo": "assets/img/logo-liote-white.png",
+    "foundingDate": "1920",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 rue Vauthier",
+      "addressLocality": "Boulogne-Billancourt",
+      "postalCode": "92100",
+      "addressCountry": "FR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+33-1-46-03-01-73",
+      "email": "contact@liote.fr"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip-link (accessibility) -->
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ============================================
+       LOADING SCREEN
+       ============================================ -->
+  <div class="loading" aria-label="Chargement en cours">
+    <img class="loading__logo" src="assets/img/logo-animation.gif" alt="Lioté">
+  </div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar navbar--transparent" aria-label="Navigation principale">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="navbar__logo" aria-label="Lioté — Accueil">
+        <img src="assets/img/logo-liote-dark.jpg" alt="Lioté" width="120" height="40">
+      </a>
+
+      <!-- Menu principal -->
+      <ul class="navbar__menu" role="menubar">
+        <li role="none"><a href="pages/realisations.html" class="navbar__link" role="menuitem">Réalisations</a></li>
+        <li role="none"><a href="pages/toiles-evenementielles.html" class="navbar__link" role="menuitem">Solutions</a></li>
+        <li role="none"><a href="pages/proprietaires.html" class="navbar__link" role="menuitem">Propriétaires</a></li>
+        <li role="none"><a href="pages/notre-histoire.html" class="navbar__link" role="menuitem">À propos</a></li>
+        <li role="none"><a href="pages/blog.html" class="navbar__link" role="menuitem">Blog</a></li>
+        <li role="none"><a href="pages/contact.html" class="navbar__link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Actions droite -->
+      <div class="navbar__actions">
+        <span class="navbar__phone" aria-label="Téléphone">01 46 03 01 73</span>
+        <a href="pages/contact.html" class="navbar__cta btn btn--primary">Demander un devis</a>
+      </div>
+
+      <!-- Hamburger mobile -->
+      <button class="navbar__hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ============================================
+       SECTION 1 — HERO
+       ============================================ -->
+  <section class="hero" id="main" aria-label="Présentation Lioté">
+
+    <!-- Carousel d'images plein écran -->
+    <div class="hero__carousel">
+      <div class="hero__slide hero__slide--active" style="background-image: url('assets/img/hero-1-netflix.jpg');">
+      </div>
+      <div class="hero__slide" style="background-image: url('assets/img/hero-2-bottega.jpg');">
+      </div>
+      <div class="hero__slide" style="background-image: url('assets/img/hero-3-nike.jpg');">
+      </div>
+      <div class="hero__slide" style="background-image: url('assets/img/hero-4-audi.jpg');">
+      </div>
+      <div class="hero__slide" style="background-image: url('assets/img/hero-5-coach.jpg');">
+      </div>
+      <div class="hero__slide" style="background-image: url('assets/img/hero-6-lacoste.jpg');">
+      </div>
+    </div>
+
+    <!-- Overlay sombre -->
+    <div class="hero__overlay"></div>
+
+    <!-- Contenu hero -->
+    <div class="hero__content">
+      <p class="hero__slogan">Transforme le paysage urbain en scénographie XXL pour les marques</p>
+      <h1 class="hero__headline">Votre marque anime la ville depuis 1925</h1>
+      <p class="hero__subline">Lioté conçoit des dispositifs publicitaires monumentaux qui transforment les façades parisiennes en scénographies urbaines d'exception. Du grand format événementiel au digital, nous offrons à votre marque une présence visuelle inoubliable.</p>
+      <div class="hero__ctas">
+        <a href="pages/toiles-evenementielles.html" class="btn btn--primary">Découvrir nos solutions</a>
+        <a href="pages/realisations.html" class="btn btn--ghost">Voir nos réalisations</a>
+      </div>
+    </div>
+
+    <!-- Indicateur de scroll -->
+    <div class="hero__scroll" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- ============================================
+       SECTION 2 — AUDIENCE ROUTER
+       ============================================ -->
+  <section class="section section--navy" aria-label="À qui s'adresse Lioté">
+    <div class="container">
+      <div class="grid-2">
+
+        <!-- Card Annonceurs -->
+        <div class="card card--router">
+          <div class="card__icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#E91E8C" stroke-width="2">
+              <circle cx="24" cy="24" r="20"/>
+              <path d="M16 20l8-6v20l-8-6H12V20h4z"/>
+              <path d="M28 18c2 2 2 6 0 8"/>
+              <path d="M32 14c4 4 4 12 0 16"/>
+            </svg>
+          </div>
+          <h2 class="card__title">Annonceurs &amp; agences</h2>
+          <p class="card__description">Déployez votre marque sur les emplacements les plus prestigieux de Paris grâce à nos dispositifs monumentaux et digitaux.</p>
+          <a href="pages/solutions.html" class="card__link">Explorer nos solutions publicitaires <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <!-- Card Propriétaires -->
+        <div class="card card--router">
+          <div class="card__icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#00B4D8" stroke-width="2">
+              <circle cx="24" cy="24" r="20"/>
+              <rect x="14" y="16" width="20" height="20" rx="1"/>
+              <path d="M20 36V28h8v8"/>
+              <path d="M20 22h2M26 22h2M20 26h2M26 26h2"/>
+            </svg>
+          </div>
+          <h2 class="card__title">Propriétaires &amp; gestionnaires</h2>
+          <p class="card__description">Financez vos travaux de rénovation grâce à la valorisation publicitaire de vos façades, sans impact sur vos charges.</p>
+          <a href="pages/proprietaires.html" class="card__link">Valoriser mon patrimoine <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 3 — STATS BAR
+       ============================================ -->
+  <section class="section section--deep" aria-label="Chiffres clés Lioté">
+    <div class="container">
+      <div class="stats">
+
+        <div class="stats__item">
+          <span class="stats__number" data-target="1925">1925</span>
+          <span class="stats__label">Premier chantier (Tour Eiffel)</span>
+        </div>
+
+        <div class="stats__item">
+          <span class="stats__number" data-target="5000000" data-suffix="M+">5M+</span>
+          <span class="stats__label">Visiteurs par an au Palais des Congrès</span>
+        </div>
+
+        <div class="stats__item">
+          <span class="stats__number" data-target="24">24</span>
+          <span class="stats__label">Écrans DOOH au Palais des Congrès</span>
+        </div>
+
+        <div class="stats__item">
+          <span class="stats__number" data-target="100" data-suffix="+">100+</span>
+          <span class="stats__label">Marques accompagnées</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 4 — NOTRE EXPERTISE
+       ============================================ -->
+  <section class="section section--navy" id="expertise" aria-label="Notre expertise">
+    <div class="container">
+      <p class="eyebrow">Expertise</p>
+      <h2>Notre expertise</h2>
+
+      <div class="grid-2">
+
+        <!-- Expertise 1 -->
+        <div class="card card--expertise">
+          <div class="card__image">
+            <img src="assets/img/expertise-toiles.jpg" alt="Toile événementielle XXL déployée sur une façade parisienne de nuit" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Toiles événementielles XXL</h3>
+            <p class="card__description">Des dispositifs monumentaux sur-mesure déployés sur les façades les plus stratégiques de Paris, captant jusqu'à 1 million de vues par affichage.</p>
+            <a href="pages/toiles-evenementielles.html" class="card__link">En savoir plus <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+        <!-- Expertise 2 -->
+        <div class="card card--expertise">
+          <div class="card__image">
+            <img src="assets/img/expertise-pdc.jpg" alt="Écrans digitaux au Palais des Congrès de Paris" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Affichage premium Palais des Congrès</h3>
+            <p class="card__description">Un maillage stratégique de 24 écrans digitaux et de supports premium aux points de passage clés de 5 millions de visiteurs annuels.</p>
+            <a href="pages/affichage-premium.html" class="card__link">En savoir plus <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+        <!-- Expertise 3 -->
+        <div class="card card--expertise">
+          <div class="card__image">
+            <img src="assets/img/expertise-lumineuse.jpg" alt="Publicité lumineuse sur les toits de Paris la nuit" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Publicités lumineuses</h3>
+            <p class="card__description">Des enseignes monumentales installées sur les toits parisiens pour une signature nocturne visible depuis les grands axes de circulation.</p>
+            <a href="pages/publicites-lumineuses.html" class="card__link">En savoir plus <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+        <!-- Expertise 4 -->
+        <div class="card card--expertise">
+          <div class="card__image">
+            <img src="assets/img/expertise-signaletique.jpg" alt="Signalétique événementielle au Palais des Congrès" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Enseigne &amp; signalétique</h3>
+            <p class="card__description">Des solutions de signalétique sur-mesure pour habiller intégralement vos événements au Palais des Congrès : ascenseurs, colonnes, escalators.</p>
+            <a href="pages/affichage-premium.html" class="card__link">En savoir plus <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5 — RÉALISATIONS
+       ============================================ -->
+  <section class="section section--deep" id="realisations" aria-label="Nos réalisations">
+    <div class="container">
+      <p class="eyebrow">Portfolio</p>
+      <h2>Nos réalisations</h2>
+      <p class="section__subline">Des campagnes qui marquent le paysage parisien et l'esprit du public. Découvrez les dispositifs déployés pour les marques les plus prestigieuses.</p>
+
+      <div class="grid-3">
+
+        <!-- Réalisation 1 -->
+        <div class="card card--case-study">
+          <div class="card__image">
+            <img src="assets/img/case-netflix.jpg" alt="Toile monumentale Netflix Squid Game de nuit à Paris" loading="lazy">
+            <span class="card__tag card__tag--magenta">Toile événementielle</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__client">Netflix</h3>
+            <p class="card__location">Place d'Estienne d'Orves, Paris</p>
+          </div>
+        </div>
+
+        <!-- Réalisation 2 -->
+        <div class="card card--case-study">
+          <div class="card__image">
+            <img src="assets/img/case-lacoste.jpg" alt="Campagne Lacoste Play Big, Grand Prix 2025" loading="lazy">
+            <span class="card__tag card__tag--magenta">Toile événementielle</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__client">Lacoste</h3>
+            <p class="card__location">Paris</p>
+          </div>
+        </div>
+
+        <!-- Réalisation 3 -->
+        <div class="card card--case-study">
+          <div class="card__image">
+            <img src="assets/img/pdc-main.jpg" alt="Signalétique Bioderma au Palais des Congrès" loading="lazy">
+            <span class="card__tag card__tag--cyan">Palais des Congrès</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__client">Bioderma</h3>
+            <p class="card__location">Palais des Congrès, Paris</p>
+          </div>
+        </div>
+
+        <!-- Réalisation 4 -->
+        <div class="card card--case-study">
+          <div class="card__image">
+            <img src="assets/img/case-moncler.jpg" alt="Toile événementielle Moncler sur façade parisienne" loading="lazy">
+            <span class="card__tag card__tag--magenta">Toile événementielle</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__client">Moncler</h3>
+            <p class="card__location">La Madeleine, Paris</p>
+          </div>
+        </div>
+
+        <!-- Réalisation 5 -->
+        <div class="card card--case-study">
+          <div class="card__image">
+            <img src="assets/img/samsung-apres.jpg" alt="Toile Samsung sur le Pont Neuf à Paris" loading="lazy">
+            <span class="card__tag card__tag--cyan">Rénovation de patrimoine</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__client">Samsung</h3>
+            <p class="card__location">Pont Neuf, Paris</p>
+          </div>
+        </div>
+
+        <!-- Réalisation 6 -->
+        <div class="card card--case-study">
+          <div class="card__image">
+            <img src="assets/img/lumineuse-main.jpg" alt="Publicité lumineuse Hitachi sur les toits de Paris" loading="lazy">
+            <span class="card__tag card__tag--cyan">Publicité lumineuse</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__client">Hitachi</h3>
+            <p class="card__location">Paris</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="pages/realisations.html" class="btn btn--ghost">Voir toutes nos réalisations</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 6 — CLIENT LOGOS
+       ============================================ -->
+  <section class="section section--navy" aria-label="Nos clients">
+    <div class="container">
+      <h2 class="text-center">Ils nous font confiance</h2>
+
+      <div class="logo-carousel" aria-label="Logos des marques clientes">
+        <div class="logo-carousel__track">
+          <img class="logo-carousel__logo" src="assets/logos/Celine-logo.png" alt="Celine" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/LOreal-Logo.png" alt="L'Oréal" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Audemars_Piguet_logo.png" alt="Audemars Piguet" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Calvin-Klein-Logo.png" alt="Calvin Klein" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Ralph-Lauren-Logo.png" alt="Ralph Lauren" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Tommy_Hilfiger_Logo.svg.png" alt="Tommy Hilfiger" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Logo_NIKE.svg.png" alt="Nike" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Adidas_Logo.svg.png" alt="Adidas" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Ray-Ban-logo-EB2B2056D3-seeklogo.com.png" alt="Ray-Ban" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Audi_logo.svg.png" alt="Audi" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Air-France-Logo.png" alt="Air France" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Jaeger-LeCoultre.png" alt="Jaeger-LeCoultre" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/IsabelMarant_Logo_Feb2023_2.png" alt="Isabel Marant" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Roberto-Cavalli-logo.png" alt="Roberto Cavalli" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Volkswagen-Logo.png" alt="Volkswagen" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Nissan_2020_logo.svg.png" alt="Nissan" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Beats-Emblem.png" alt="Beats" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Casio-Logo.png" alt="Casio" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Logo-laposte.png" alt="La Poste" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Logo-Renault-thumb-1280x720-1-1024x576.png" alt="Renault" loading="lazy">
+          <!-- Duplicata pour défilement infini (JS clone aussi) -->
+          <img class="logo-carousel__logo" src="assets/logos/Celine-logo.png" alt="Celine" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/LOreal-Logo.png" alt="L'Oréal" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Audemars_Piguet_logo.png" alt="Audemars Piguet" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Calvin-Klein-Logo.png" alt="Calvin Klein" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Ralph-Lauren-Logo.png" alt="Ralph Lauren" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Tommy_Hilfiger_Logo.svg.png" alt="Tommy Hilfiger" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Logo_NIKE.svg.png" alt="Nike" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Adidas_Logo.svg.png" alt="Adidas" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Ray-Ban-logo-EB2B2056D3-seeklogo.com.png" alt="Ray-Ban" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Audi_logo.svg.png" alt="Audi" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 7 — HERITAGE TEASER
+       ============================================ -->
+  <section class="section section--white" id="heritage" aria-label="Notre histoire">
+    <div class="container">
+
+      <div class="heritage">
+
+        <!-- Vidéo historique -->
+        <div class="heritage__video">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+            <iframe src="https://www.youtube.com/embed/H4w8MrGXfeE" title="L'histoire de Lioté" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+        </div>
+
+        <!-- Contenu texte -->
+        <div class="heritage__content">
+          <p class="eyebrow" style="color: var(--magenta);">Notre histoire</p>
+          <h2>Plus d'un siècle d'audace publicitaire</h2>
+          <p>Depuis 1920, Lioté écrit l'histoire de la communication urbaine à Paris. De la Tour Eiffel aux façades haussmanniennes, chaque décennie a forgé notre savoir-faire unique : transformer la ville en un média vivant au service des plus grandes marques.</p>
+
+          <ul class="milestones">
+            <li class="milestones__item">
+              <span class="milestones__year">1925</span>
+              <span class="milestones__text">La Tour Eiffel s'illumine aux couleurs de Citroën : une première mondiale orchestrée par Lioté.</span>
+            </li>
+            <li class="milestones__item">
+              <span class="milestones__year">1998</span>
+              <span class="milestones__text">Adidas habille le Stade de France pour la Coupe du Monde, dispositif signé Lioté.</span>
+            </li>
+            <li class="milestones__item">
+              <span class="milestones__year">2017</span>
+              <span class="milestones__text">Hommage national à Johnny Hallyday : toile monumentale déployée sur l'église de la Madeleine en 18 heures.</span>
+            </li>
+            <li class="milestones__item">
+              <span class="milestones__year">2025</span>
+              <span class="milestones__text">Lacoste remporte le Grand Prix de la Communication Extérieure, scénographie signée Lioté.</span>
+            </li>
+          </ul>
+
+          <a href="pages/notre-histoire.html" class="btn btn--dark">Découvrir notre histoire</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 8 — CTA BAND
+       ============================================ -->
+  <section class="cta-band" aria-label="Contactez-nous">
+    <div class="container text-center">
+      <h2>Votre prochaine campagne commence ici</h2>
+      <p>Échangeons sur votre projet et trouvons ensemble le dispositif qui fera rayonner votre marque dans le paysage urbain.</p>
+      <div class="cta-band__actions">
+        <a href="pages/contact.html" class="btn btn--ghost">Nous contacter</a>
+        <span class="cta-band__sep" aria-hidden="true">|</span>
+        <a href="tel:+33146030173" class="cta-band__phone">01 46 03 01 73</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 9 — BLOG PREVIEW
+       ============================================ -->
+  <section class="section section--navy" id="blog" aria-label="Actualités et coulisses">
+    <div class="container">
+      <p class="eyebrow">Blog</p>
+      <h2>Actualités &amp; coulisses</h2>
+
+      <div class="grid-3">
+
+        <!-- Article 1 : Lacoste Grand Prix -->
+        <article class="card card--blog">
+          <div class="card__image">
+            <img src="assets/img/blog/lacoste-grand-prix.jpg" alt="Campagne Lacoste Play Big, Grand Prix de la Communication Extérieure 2025" loading="lazy">
+            <span class="card__tag card__tag--magenta">Actualités</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Lacoste, BETC et Lioté triomphent au 50e Grand Prix de la Communication Extérieure</h3>
+            <time class="card__date" datetime="2026-02-14">14 février 2026</time>
+            <p class="card__excerpt">La campagne « Play Big » remporte le Grand Prix. Retour sur une campagne monumentale déployée durant les JO de Paris 2024.</p>
+            <a href="pages/blog/lacoste-grand-prix.html" class="card__link">Lire l'article <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <!-- Article 2 : Partenariat Clear Channel -->
+        <article class="card card--blog">
+          <div class="card__image">
+            <img src="assets/img/blog/palais-des-congres.jpg" alt="Palais des Congrès de Paris" loading="lazy">
+            <span class="card__tag card__tag--cyan">Partenariats</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Partenariat stratégique : Lioté et Clear Channel remportent le Palais des Congrès</h3>
+            <time class="card__date" datetime="2026-02-19">19 février 2026</time>
+            <p class="card__excerpt">Une alliance inédite pour une domination visuelle totale. Lioté et Clear Channel commercialisent les espaces publicitaires du Palais des Congrès.</p>
+            <a href="pages/blog/clear-channel-palais-des-congres.html" class="card__link">Lire l'article <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <!-- Article 3 : Transition écologique -->
+        <article class="card card--blog">
+          <div class="card__image">
+            <img src="assets/img/blog/transition-ecologique.jpg" alt="Transition écologique et publicité extérieure" loading="lazy">
+            <span class="card__tag card__tag--cyan">RSE</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Transition écologique : les 7 engagements majeurs de la publicité extérieure</h3>
+            <time class="card__date" datetime="2026-02-26">26 février 2026</time>
+            <p class="card__excerpt">Face à l'urgence climatique, la filière accélère sa mutation. Découvrez les 7 engagements ambitieux dévoilés par l'UPE.</p>
+            <a href="pages/blog/transition-ecologique.html" class="card__link">Lire l'article <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <!-- Article 4 : Johnny Hallyday -->
+        <article class="card card--blog">
+          <div class="card__image">
+            <img src="assets/img/blog/johnny-hallyday.jpg" alt="Hommage monumental à Johnny Hallyday, Église de la Madeleine" loading="lazy">
+            <span class="card__tag card__tag--magenta">Événementiel</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">L'adieu à Johnny Hallyday : l'incroyable histoire de la Madeleine</h3>
+            <time class="card__date" datetime="2026-01-27">27 janvier 2026</time>
+            <p class="card__excerpt">14,4 millions de téléspectateurs, une opération commando en 18 heures. Retour sur l'hommage monumental à l'Église de la Madeleine.</p>
+            <a href="pages/blog/johnny-hallyday.html" class="card__link">Lire l'article <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Colonne 1 : Logo + tagline + réseaux -->
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo" aria-label="Lioté — Accueil">
+            <img src="assets/img/logo-liote-dark.jpg" alt="Lioté">
+          </a>
+          <p class="footer__tagline">Scénographie urbaine &amp; publicité XXL depuis 1925.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/liote_france/" target="_blank" rel="noopener noreferrer" aria-label="Lioté sur Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/liote/" target="_blank" rel="noopener noreferrer" aria-label="Lioté sur LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://studio.youtube.com/channel/UCb78wARZ6pF5m4UEA3snTDQ/" target="_blank" rel="noopener noreferrer" aria-label="Lioté sur YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Colonne 2 : Solutions -->
+        <div class="footer__col">
+          <h3 class="footer__heading">Solutions</h3>
+          <ul class="footer__links">
+            <li><a href="pages/toiles-evenementielles.html">Toiles Événementielles</a></li>
+            <li><a href="pages/affichage-premium.html">Affichage Palais des Congrès</a></li>
+            <li><a href="pages/publicites-lumineuses.html">Publicités Lumineuses</a></li>
+            <li><a href="pages/affichage-premium.html">Enseigne &amp; Signalétique</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Liens utiles -->
+        <div class="footer__col">
+          <h3 class="footer__heading">Liens utiles</h3>
+          <ul class="footer__links">
+            <li><a href="pages/realisations.html">Réalisations</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4 : Contact -->
+        <div class="footer__col">
+          <h3 class="footer__heading">Contact</h3>
+          <address class="footer__contact">
+            <p>14 rue Vauthier<br>92100 Boulogne-Billancourt</p>
+            <p><a href="tel:+33146030173">01 46 03 01 73</a></p>
+            <p>
+              <a href="mailto:alix@liote.fr">alix@liote.fr</a><br>
+              <a href="mailto:boris@liote.fr">boris@liote.fr</a>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer__bottom">
+        <span>&copy; 2026 Publicité Lumineuse et Affichage Lioté. Tous droits réservés.</span>
+        <span class="footer__bottom-sep">|</span>
+        <a href="pages/mentions-legales.html">Mentions légales</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title & Meta -->
+  <title>Notre Equipe | Lioté</title>
+  <meta name="description" content="Découvrez l'équipe Lioté : Alix Giraux (PDG) et Boris Morel (Directeur Commercial). Une équipe resserrée, agile et engagée au service de la communication extérieure.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    .team-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: var(--navy-deep);
+      border: 3px solid var(--border-dark);
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .team-card {
+      text-align: center;
+      padding: 2.5rem 2rem;
+    }
+    .team-card h3 {
+      margin-bottom: 0.25rem;
+    }
+    .team-card .team-role {
+      color: var(--magenta);
+      font-family: var(--font-ui);
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.25rem;
+    }
+    .team-card .team-bio {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      max-width: 100%;
+    }
+    .team-contact a {
+      display: inline-block;
+      color: var(--cyan);
+      font-size: 14px;
+      margin: 0.25rem 0.75rem;
+      transition: color var(--transition-fast);
+    }
+    .team-contact a:hover {
+      color: var(--white);
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar navbar--solid" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo" aria-label="Lioté — Accueil">
+        <img src="../assets/img/logo-liote-white.png" alt="Lioté" width="120" height="40">
+      </a>
+      <ul class="navbar__menu" role="menubar">
+        <li role="none"><a href="solutions.html" role="menuitem">Solutions</a></li>
+        <li role="none"><a href="realisations.html" role="menuitem">Réalisations</a></li>
+        <li role="none"><a href="proprietaires.html" role="menuitem">Propriétaires</a></li>
+        <li role="none"><a href="notre-histoire.html" role="menuitem">À propos</a></li>
+        <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <span class="navbar__phone" aria-label="Téléphone">01 46 03 01 73</span>
+        <a href="contact.html" class="navbar__cta btn btn--primary">Demander un devis</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="navbar__overlay" aria-label="Menu mobile">
+    <a href="solutions.html" class="navbar__link">Solutions</a>
+    <a href="realisations.html" class="navbar__link">Réalisations</a>
+    <a href="proprietaires.html" class="navbar__link">Propriétaires</a>
+    <a href="notre-histoire.html" class="navbar__link">À propos</a>
+    <a href="blog.html" class="navbar__link">Blog</a>
+    <a href="contact.html" class="navbar__link">Contact</a>
+    <a href="contact.html" class="navbar__cta btn btn--primary">Demander un devis</a>
+  </div>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section id="main" class="section section--deep" style="min-height: 40vh; display: flex; align-items: center; padding-top: 8rem;" aria-label="Notre Equipe">
+    <div class="container text-center">
+      <p class="eyebrow mb-2">L'équipe</p>
+      <h1>Notre Equipe</h1>
+      <p class="hero__subline" style="margin: 1.5rem auto 0;">Une équipe resserrée, agile et profondément engagée au service de vos projets.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       INTRO
+       ============================================ -->
+  <section class="section section--navy">
+    <div class="container-narrow">
+      <p style="color: var(--text-muted); font-size: 18px; line-height: 1.8;">
+        Chez Lioté, la force de l'entreprise repose sur une équipe resserrée, agile et profondément engagée. Chaque membre apporte une expertise pointue au service des annonceurs, des agences et des gestionnaires de sites. Cette proximité humaine, alliée à plus d'un siècle de savoir-faire, permet à Lioté d'offrir un accompagnement sur mesure à chaque étape d'un projet — de la conception à l'installation, du conseil stratégique au suivi opérationnel.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TEAM CARDS
+       ============================================ -->
+  <section class="section section--deep" aria-label="Membres de l'équipe">
+    <div class="container">
+      <div class="grid-2">
+
+        <!-- Alix Giraux -->
+        <div class="card team-card">
+          <div class="team-photo" aria-label="Photo d'Alix Giraux">
+            <img src="../assets/img/team-alix.png" alt="Alix Giraux" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+          </div>
+          <h3>Alix Giraux</h3>
+          <p class="team-role">Présidente-Directrice Générale</p>
+          <p class="team-bio">
+            Alix Giraux a rejoint Lioté en 2007 avant d'en prendre la direction générale en 2010, succédant à son père Pascal Giraux. Elle dirige aujourd'hui l'ensemble du développement commercial de l'entreprise, avec une expertise particulière dans les toiles événementielles, la publicité lumineuse et la valorisation du patrimoine urbain. Sous sa direction, Lioté a élargi son offre à tous les formats de communication extérieure tout en préservant l'indépendance et l'identité familiale de l'entreprise.
+          </p>
+          <div class="team-contact">
+            <a href="mailto:a.giraux@liote.fr">a.giraux@liote.fr</a>
+            <a href="tel:+33146032812">01 46 03 28 12</a>
+          </div>
+        </div>
+
+        <!-- Boris Morel -->
+        <div class="card team-card">
+          <div class="team-photo" aria-label="Photo de Boris Morel">
+            <img src="../assets/img/team-boris.png" alt="Boris Morel" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+          </div>
+          <h3>Boris Morel</h3>
+          <p class="team-role">Directeur Commercial Palais des Congrès</p>
+          <p class="team-bio">
+            Boris Morel est en charge de l'ensemble des opérations publicitaires au Palais des Congrès de Paris, l'un des sites événementiels les plus fréquentés de la capitale. Il pilote les dispositifs DOOH, les activations événementielles et la signalétique publicitaire au sein de ce lieu d'exception, en collaboration étroite avec les annonceurs et les organisateurs d'événements. Sa connaissance fine du site et de ses flux de visiteurs lui permet de proposer des solutions sur mesure, maximisant l'impact et la visibilité de chaque campagne.
+          </p>
+          <div class="team-contact">
+            <a href="mailto:b.morel@liote.fr">b.morel@liote.fr</a>
+            <a href="tel:+33677194726">06 77 19 47 26</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA BAND
+       ============================================ -->
+  <section class="cta-band" aria-label="Contactez-nous">
+    <div class="container text-center">
+      <h2>Votre prochaine campagne commence ici</h2>
+      <p>Échangeons sur votre projet et trouvons ensemble le dispositif qui fera rayonner votre marque dans le paysage urbain.</p>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--ghost">Nous contacter</a>
+        <span class="cta-band__phone">01 46 05 36 20</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__col">
+          <a href="../index.html" class="footer__logo" aria-label="Lioté — Accueil">
+            <img src="../assets/img/logo-liote-white.png" alt="Lioté" width="140" height="46">
+          </a>
+          <p class="footer__tagline">Scénographie urbaine &amp; publicité XXL depuis 1920.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/liote_pub/" target="_blank" rel="noopener noreferrer" aria-label="Lioté sur Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/liote/" target="_blank" rel="noopener noreferrer" aria-label="Lioté sur LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@liote" target="_blank" rel="noopener noreferrer" aria-label="Lioté sur YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Solutions</h3>
+          <ul class="footer__links">
+            <li><a href="solutions.html#toiles">Toiles Événementielles</a></li>
+            <li><a href="solutions.html#palais">Affichage Palais des Congrès</a></li>
+            <li><a href="solutions.html#lumineuses">Publicités Lumineuses</a></li>
+            <li><a href="solutions.html#signaletique">Enseigne &amp; Signalétique</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Liens utiles</h3>
+          <ul class="footer__links">
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Contact</h3>
+          <address class="footer__contact">
+            <p>14 rue Vauthier<br>92100 Boulogne-Billancourt</p>
+            <p><a href="tel:+33146030173">01 46 03 01 73</a></p>
+            <p>
+              <a href="mailto:alix@liote.fr">alix@liote.fr</a><br>
+              <a href="mailto:boris@liote.fr">boris@liote.fr</a>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Publicité Lumineuse et Affichage Lioté. Tous droits réservés.</p>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
