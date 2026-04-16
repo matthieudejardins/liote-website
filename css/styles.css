@@ -1563,8 +1563,7 @@ summary,
     display: none;
   }
 
-  .navbar__phone,
-  .navbar__cta {
+  .navbar__actions {
     display: none;
   }
 
