@@ -48,18 +48,15 @@
       background-color: var(--magenta);
       color: var(--white);
     }
-    /* Case study card image placeholder */
-    .card--case-study .card__image-placeholder {
+    .card--case-study .card__image {
       width: 100%;
       aspect-ratio: 16 / 10;
-      background-color: var(--navy-deep);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+      overflow: hidden;
+    }
+    .card--case-study .card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .card--case-study .card__body {
       padding: 1.25rem 1.5rem;
@@ -154,7 +151,7 @@
 
         <!-- 1. Netflix Squid Game 2 -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-netflix.jpg" alt="Toile monumentale Netflix Squid Game 2" loading="lazy"></div>
           <div class="card__body">
             <h3>Netflix — Squid Game 2</h3>
             <p class="card__location">Place d'Estienne d'Orves, Paris</p>
@@ -164,7 +161,7 @@
 
         <!-- 2. La Poste Colissimo 3D -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/toiles-laposte-3d.jpg" alt="Installation 3D La Poste Colissimo" loading="lazy"></div>
           <div class="card__body">
             <h3>La Poste — Colissimo 3D</h3>
             <p class="card__location">Avenue Charles de Gaulle, Neuilly-sur-Seine</p>
@@ -174,7 +171,7 @@
 
         <!-- 3. Nissan Juke 3D -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/toiles-nissan-juke-3d.jpg" alt="Sculpture 3D Nissan Juke" loading="lazy"></div>
           <div class="card__body">
             <h3>Nissan — Juke 3D</h3>
             <p class="card__location">Avenue Charles de Gaulle, Neuilly-sur-Seine</p>
@@ -184,7 +181,7 @@
 
         <!-- 4. Johnny Hallyday -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-johnny.jpg" alt="Hommage Johnny Hallyday à la Madeleine" loading="lazy"></div>
           <div class="card__body">
             <h3>Johnny Hallyday — Hommage</h3>
             <p class="card__location">Église de la Madeleine, Paris</p>
@@ -194,7 +191,7 @@
 
         <!-- 5. Lacoste "Play Big" -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-lacoste.jpg" alt="Campagne Lacoste Play Big" loading="lazy"></div>
           <div class="card__body">
             <h3>Lacoste — "Play Big"</h3>
             <p class="card__location">Paris — Multi-sites</p>
@@ -204,7 +201,7 @@
 
         <!-- 6. Tommy Hilfiger -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-tommy.jpg" alt="Toile événementielle Tommy Hilfiger" loading="lazy"></div>
           <div class="card__body">
             <h3>Tommy Hilfiger</h3>
             <p class="card__location">Église de la Madeleine, Paris</p>
@@ -214,7 +211,7 @@
 
         <!-- 7. Swarovski -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-swarovski.jpg" alt="Toile événementielle Swarovski" loading="lazy"></div>
           <div class="card__body">
             <h3>Swarovski</h3>
             <p class="card__location">Place de l'Opéra, Paris</p>
@@ -224,7 +221,7 @@
 
         <!-- 8. IMCAS Congress -->
         <a href="#" class="card card--case-study" data-category="palais-des-congres">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-imcas.jpg" alt="Signalétique IMCAS au Palais des Congrès" loading="lazy"></div>
           <div class="card__body">
             <h3>IMCAS Congress</h3>
             <p class="card__location">Palais des Congrès, Paris</p>
@@ -234,7 +231,7 @@
 
         <!-- 9. L'Oréal Panorama -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/toiles-loreal.jpg" alt="Toile événementielle L Oréal Panorama" loading="lazy"></div>
           <div class="card__body">
             <h3>L'Oréal — Panorama</h3>
             <p class="card__location">Place d'Estienne d'Orves, Paris</p>
@@ -244,7 +241,7 @@
 
         <!-- 10. Celine -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-celine.jpg" alt="Toile événementielle Celine Place Odéon" loading="lazy"></div>
           <div class="card__body">
             <h3>Celine</h3>
             <p class="card__location">Place de l'Odéon, Paris</p>
@@ -254,7 +251,7 @@
 
         <!-- 11. DAZN / Ligue 1 -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/toiles-dazn.jpg" alt="Toile événementielle DAZN Ligue 1" loading="lazy"></div>
           <div class="card__body">
             <h3>DAZN — Ligue 1</h3>
             <p class="card__location">Place d'Estienne d'Orves, Paris</p>
@@ -264,7 +261,7 @@
 
         <!-- 12. Coach -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/hero-5-coach.jpg" alt="Toile événementielle Coach" loading="lazy"></div>
           <div class="card__body">
             <h3>Coach</h3>
             <p class="card__location">Église de la Madeleine, Paris</p>
@@ -274,7 +271,7 @@
 
         <!-- 13. Moncler -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-moncler.jpg" alt="Toile événementielle Moncler" loading="lazy"></div>
           <div class="card__body">
             <h3>Moncler</h3>
             <p class="card__location">Église de la Madeleine, Paris</p>
@@ -284,7 +281,7 @@
 
         <!-- 14. Renault R5 -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-renault.jpg" alt="Toile événementielle Renault R5" loading="lazy"></div>
           <div class="card__body">
             <h3>Renault — R5 Électrique</h3>
             <p class="card__location">Place d'Estienne d'Orves, Paris</p>
@@ -294,7 +291,7 @@
 
         <!-- 15. Jaeger-LeCoultre Reverso -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-jaeger.jpg" alt="Toile événementielle Jaeger-LeCoultre" loading="lazy"></div>
           <div class="card__body">
             <h3>Jaeger-LeCoultre — Reverso</h3>
             <p class="card__location">Place de l'Odéon, Paris</p>
@@ -304,7 +301,7 @@
 
         <!-- 16. Samsung — Pont Neuf -->
         <a href="#" class="card card--case-study" data-category="patrimoine">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/samsung-toile.jpg" alt="Toile Samsung sur le Pont Neuf" loading="lazy"></div>
           <div class="card__body">
             <h3>Samsung — Pont Neuf</h3>
             <p class="card__location">Pont Neuf, Paris</p>
@@ -314,7 +311,7 @@
 
         <!-- 17. ADF Congress Doctolib -->
         <a href="#" class="card card--case-study" data-category="palais-des-congres">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-doctolib.jpg" alt="Signalétique Doctolib au Palais des Congrès" loading="lazy"></div>
           <div class="card__body">
             <h3>Doctolib — Congrès ADF</h3>
             <p class="card__location">Palais des Congrès, Paris</p>
@@ -324,7 +321,7 @@
 
         <!-- 18. ADF Congress Oral-B -->
         <a href="#" class="card card--case-study" data-category="palais-des-congres">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-oralb.jpg" alt="Signalétique Oral-B au Palais des Congrès" loading="lazy"></div>
           <div class="card__body">
             <h3>Oral-B — Congrès ADF</h3>
             <p class="card__location">Palais des Congrès, Paris</p>
@@ -334,7 +331,7 @@
 
         <!-- 19. Citroën x Tour Eiffel 1925 -->
         <a href="#" class="card card--case-study" data-category="publicite-lumineuse">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-citroen.jpg" alt="Citroën illumine la Tour Eiffel 1925" loading="lazy"></div>
           <div class="card__body">
             <h3>Citroën x Tour Eiffel</h3>
             <p class="card__location">Tour Eiffel, Paris — 1925</p>
@@ -344,7 +341,7 @@
 
         <!-- 20. Adidas x Zidane — Stade de France -->
         <a href="#" class="card card--case-study" data-category="toiles-evenementielles">
-          <div class="card__image-placeholder">Image</div>
+          <div class="card__image"><img src="../assets/img/case-adidas98.jpg" alt="Toile Adidas Zidane Coupe du Monde 1998" loading="lazy"></div>
           <div class="card__body">
             <h3>Adidas x Zidane — 1998</h3>
             <p class="card__location">Stade de France, Saint-Denis</p>
