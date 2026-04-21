@@ -201,7 +201,14 @@
           <div class="form-card">
             <p class="text-muted mb-4">Décrivez-nous votre projet en quelques lignes — type de campagne, emplacement souhaité, calendrier — et nous vous proposerons une recommandation personnalisée.</p>
 
-            <form action="#" method="POST" novalidate>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+
+              <!-- Web3Forms configuration -->
+              <input type="hidden" name="access_key" value="REPLACE-WITH-WEB3FORMS-ACCESS-KEY">
+              <input type="hidden" name="subject" value="Nouveau message — Site Lioté">
+              <input type="hidden" name="from_name" value="Formulaire de contact Lioté">
+              <!-- Honeypot anti-spam -->
+              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
               <div class="form__group">
                 <label for="nom" class="form__label">Nom *</label>
@@ -245,6 +252,8 @@
                 <label for="message" class="form__label">Votre message *</label>
                 <textarea id="message" name="message" class="form__textarea" placeholder="Décrivez votre projet : type de campagne, emplacement souhaité, calendrier..." required></textarea>
               </div>
+
+              <div id="form-status" role="status" aria-live="polite" style="display:none; padding:0.75rem 1rem; border-radius:8px; margin-bottom:1rem; font-size:14px;"></div>
 
               <button type="submit" class="btn btn--primary" style="width: 100%;">Envoyer</button>
 
@@ -318,5 +327,46 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="../js/main.js"></script>
+
+  <!-- Contact form — Web3Forms submission -->
+  <script>
+    (function () {
+      var form = document.getElementById('contact-form');
+      var status = document.getElementById('form-status');
+      if (!form || !status) return;
+
+      function show(message, isError) {
+        status.textContent = message;
+        status.style.display = 'block';
+        status.style.backgroundColor = isError ? '#FDECEC' : '#E8F7EE';
+        status.style.color = isError ? '#9B1C1C' : '#1F6B3A';
+        status.style.border = '1px solid ' + (isError ? '#F5C2C2' : '#BEE5CB');
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        show('Envoi en cours…', false);
+
+        try {
+          var data = new FormData(form);
+          var response = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          var result = await response.json().catch(function () { return {}; });
+
+          if (response.ok && result.success) {
+            show('Merci ! Votre message a bien été envoyé. Nous revenons vers vous sous 24 heures ouvrées.', false);
+            form.reset();
+          } else {
+            show((result && result.message) || 'Une erreur est survenue. Merci de nous écrire à contact@liote.fr.', true);
+          }
+        } catch (err) {
+          show('Une erreur réseau est survenue. Merci de nous écrire à contact@liote.fr.', true);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
