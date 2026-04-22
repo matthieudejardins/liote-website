@@ -253,10 +253,16 @@
   <section class="section section--navy" aria-label="Vidéo Lioté">
     <div class="container-narrow text-center">
       <h2 class="mb-4">Lioté en images</h2>
-      <video controls playsinline preload="metadata" style="width: 100%; border-radius: 12px; background: var(--navy-deep);">
-        <source src="assets/video/histoire-liote.mp4" type="video/mp4">
-        Votre navigateur ne prend pas en charge la lecture vidéo.
-      </video>
+      <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 12px; overflow: hidden; background: var(--navy-deep);">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/bOKTGr3ymh8"
+          title="Lioté en images"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+      </div>
     </div>
   </section>
 
