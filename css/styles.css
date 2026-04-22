@@ -9,7 +9,28 @@
    1. FONTS
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap');
+/* Self-hosted fonts (RGPD-friendly: no third-party CDN, no IP exposure) */
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/cormorant.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url('../assets/fonts/inter.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../assets/fonts/montserrat.woff2') format('woff2');
+}
 
 
 /* ==========================================================================

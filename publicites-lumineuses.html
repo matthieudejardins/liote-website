@@ -12,18 +12,73 @@
   <meta property="og:title" content="Publicités Lumineuses | Lioté — Publicités sur toits parisiens">
   <meta property="og:description" content="Lioté installe des publicités lumineuses monumentales sur les toits de Paris. Plus de 400 000 contacts par jour.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://liote.fr/assets/img/og-liote.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta property="og:locale" content="fr_FR">
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0A1628">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://liote.fr/#organization",
+        "name": "Lioté",
+        "legalName": "Publicité Lumineuse et Affichage Lioté",
+        "url": "https://liote.fr",
+        "logo": "https://liote.fr/assets/img/logo-liote-dark.jpg",
+        "foundingDate": "1925",
+        "description": "Spécialiste de la publicité monumentale, des toiles événementielles, du DOOH et de la rénovation de patrimoine à Paris depuis 1925.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue Vauthier",
+          "postalCode": "92100",
+          "addressLocality": "Boulogne-Billancourt",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33146030173",
+        "email": "contact@liote.fr",
+        "sameAs": [
+          "https://www.instagram.com/liote_france/",
+          "https://www.linkedin.com/company/liote/",
+          "https://www.youtube.com/channel/UCb78wARZ6pF5m4UEA3snTDQ/"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://liote.fr/#localbusiness",
+        "name": "Lioté — Siège social",
+        "image": "https://liote.fr/assets/img/logo-liote-dark.jpg",
+        "url": "https://liote.fr/contact.html",
+        "telephone": "+33146030173",
+        "priceRange": "€€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue Vauthier",
+          "postalCode": "92100",
+          "addressLocality": "Boulogne-Billancourt",
+          "addressCountry": "FR"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 48.8369, "longitude": 2.2377 },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00", "closes": "18:00"
+        }]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -147,7 +202,7 @@
       <div class="grid-3">
         <!-- Card 1 -->
         <div class="card">
-          <img class="card__image" src="assets/img/lumineuse-evaair.jpg" alt="Publicité lumineuse Eva Air" loading="lazy">
+          <img class="card__image" src="assets/img/lumineuse-evaair.jpg" alt="Publicité lumineuse Eva Air" loading="lazy" width="672" height="448">
           <div class="card__body">
             <span class="card__tag card__tag--magenta mb-2">Rétroéclairage</span>
             <h3 class="card__title">Publicité rétroéclairée panoramique</h3>
@@ -156,7 +211,7 @@
         </div>
         <!-- Card 2 -->
         <div class="card">
-          <img class="card__image" src="assets/img/lumineuse-casio-cdn.jpg" alt="Publicité lumineuse Casio" loading="lazy">
+          <img class="card__image" src="assets/img/lumineuse-casio-cdn.jpg" alt="Publicité lumineuse Casio" loading="lazy" width="2000" height="1500">
           <div class="card__body">
             <span class="card__tag card__tag--cyan mb-2">LED</span>
             <h3 class="card__title">Publicité monumentale LED</h3>
@@ -165,7 +220,7 @@
         </div>
         <!-- Card 3 -->
         <div class="card">
-          <img class="card__image" src="assets/img/lumineuse-sobrico.jpg" alt="Publicité lumineuse Sobrico" loading="lazy">
+          <img class="card__image" src="assets/img/lumineuse-sobrico.jpg" alt="Publicité lumineuse Sobrico" loading="lazy" width="1920" height="1088">
           <div class="card__body">
             <span class="card__tag card__tag--magenta mb-2">Grande hauteur</span>
             <h3 class="card__title">Publicité sur immeuble de grande hauteur</h3>
@@ -242,7 +297,7 @@
       <div class="grid-3">
         <!-- Case Study 1 -->
         <div class="card">
-          <img class="card__image" src="assets/img/lumineuse-evaair.jpg" alt="Publicité Eva Air" loading="lazy">
+          <img class="card__image" src="assets/img/lumineuse-evaair.jpg" alt="Publicité Eva Air" loading="lazy" width="672" height="448">
           <div class="card__body">
             <span class="card__tag card__tag--magenta mb-2">Aérien</span>
             <h3 class="card__title">Eva Air</h3>
@@ -251,7 +306,7 @@
         </div>
         <!-- Case Study 2 -->
         <div class="card">
-          <img class="card__image" src="assets/img/lumineuse-casio-cdn.jpg" alt="Publicité Casio" loading="lazy">
+          <img class="card__image" src="assets/img/lumineuse-casio-cdn.jpg" alt="Publicité Casio" loading="lazy" width="2000" height="1500">
           <div class="card__body">
             <span class="card__tag card__tag--cyan mb-2">Électronique</span>
             <h3 class="card__title">Casio</h3>
@@ -260,7 +315,7 @@
         </div>
         <!-- Case Study 3 -->
         <div class="card">
-          <img class="card__image" src="assets/img/lumineuse-sobrico.jpg" alt="Publicité Sobrico" loading="lazy">
+          <img class="card__image" src="assets/img/lumineuse-sobrico.jpg" alt="Publicité Sobrico" loading="lazy" width="1920" height="1088">
           <div class="card__body">
             <span class="card__tag card__tag--magenta mb-2">Industrie</span>
             <h3 class="card__title">Sobrico</h3>
@@ -402,8 +457,8 @@
   <!-- ============================================
        SCRIPTS
        ============================================ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
 
 </body>

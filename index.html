@@ -12,17 +12,21 @@
   <meta property="og:title" content="Lioté — Scénographie urbaine & publicité XXL depuis 1925">
   <meta property="og:description" content="Lioté transforme les façades parisiennes en scénographies urbaines d'exception depuis 1925. Toiles événementielles, DOOH, publicité lumineuse et signalétique.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/og-liote.jpg">
+  <meta property="og:image" content="https://liote.fr/assets/img/og-liote.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:url" content="https://liote.fr">
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0A1628">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Preload critical resources for fastest LCP -->
+  <link rel="preload" as="image" href="assets/img/expertise-toiles.jpg" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/cormorant.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/montserrat.woff2" crossorigin>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -61,7 +65,7 @@
        LOADING SCREEN
        ============================================ -->
   <div class="loading" aria-label="Chargement en cours">
-    <img class="loading__logo" src="assets/img/logo-animation.gif" alt="Lioté">
+    <img class="loading__logo" src="assets/img/logo-animation.gif" alt="Lioté" width="500" height="281">
   </div>
 
   <!-- ============================================
@@ -167,7 +171,7 @@
         <!-- Expertise 1 -->
         <div class="card card--expertise">
           <div class="card__image">
-            <img src="assets/img/expertise-toiles.jpg" alt="Toile événementielle XXL déployée sur une façade parisienne de nuit" loading="lazy">
+            <img src="assets/img/expertise-toiles.jpg" alt="Toile événementielle XXL déployée sur une façade parisienne de nuit" loading="lazy" width="1280" height="853">
           </div>
           <div class="card__body">
             <h3 class="card__title">Toiles événementielles XXL</h3>
@@ -179,7 +183,7 @@
         <!-- Expertise 2 -->
         <div class="card card--expertise">
           <div class="card__image">
-            <img src="assets/img/expertise-pdc.jpg" alt="Écrans digitaux au Palais des Congrès de Paris" loading="lazy">
+            <img src="assets/img/expertise-pdc.jpg" alt="Écrans digitaux au Palais des Congrès de Paris" loading="lazy" width="1496" height="1334">
           </div>
           <div class="card__body">
             <h3 class="card__title">Affichage premium Palais des Congrès</h3>
@@ -191,7 +195,7 @@
         <!-- Expertise 3 -->
         <div class="card card--expertise">
           <div class="card__image">
-            <img src="assets/img/expertise-lumineuse.jpg" alt="Publicité lumineuse sur les toits de Paris la nuit" loading="lazy">
+            <img src="assets/img/expertise-lumineuse.jpg" alt="Publicité lumineuse sur les toits de Paris la nuit" loading="lazy" width="1920" height="1280">
           </div>
           <div class="card__body">
             <h3 class="card__title">Publicités lumineuses</h3>
@@ -203,7 +207,7 @@
         <!-- Expertise 4 -->
         <div class="card card--expertise">
           <div class="card__image">
-            <img src="assets/img/expertise-signaletique.jpg" alt="Signalétique événementielle au Palais des Congrès" loading="lazy">
+            <img src="assets/img/expertise-signaletique.jpg" alt="Signalétique événementielle au Palais des Congrès" loading="lazy" width="1920" height="1079">
           </div>
           <div class="card__body">
             <h3 class="card__title">Enseigne &amp; signalétique</h3>
@@ -302,7 +306,7 @@
         <!-- Réalisation 1 -->
         <div class="card card--case-study">
           <div class="card__image">
-            <img src="assets/img/case-netflix.jpg" alt="Toile monumentale Netflix Squid Game de nuit à Paris" loading="lazy">
+            <img src="assets/img/case-netflix.jpg" alt="Toile monumentale Netflix Squid Game de nuit à Paris" loading="lazy" width="1280" height="853">
             <span class="card__tag card__tag--magenta">Toile événementielle</span>
           </div>
           <div class="card__body">
@@ -314,7 +318,7 @@
         <!-- Réalisation 2 -->
         <div class="card card--case-study">
           <div class="card__image">
-            <img src="assets/img/case-lacoste.jpg" alt="Campagne Lacoste Play Big, Grand Prix 2025" loading="lazy">
+            <img src="assets/img/case-lacoste.jpg" alt="Campagne Lacoste Play Big, Grand Prix 2025" loading="lazy" width="1280" height="853">
             <span class="card__tag card__tag--magenta">Toile événementielle</span>
           </div>
           <div class="card__body">
@@ -326,7 +330,7 @@
         <!-- Réalisation 3 -->
         <div class="card card--case-study">
           <div class="card__image">
-            <img src="assets/img/pdc-main.jpg" alt="Signalétique Bioderma au Palais des Congrès" loading="lazy">
+            <img src="assets/img/pdc-main.jpg" alt="Signalétique Bioderma au Palais des Congrès" loading="lazy" width="1920" height="1079">
             <span class="card__tag card__tag--cyan">Palais des Congrès</span>
           </div>
           <div class="card__body">
@@ -338,7 +342,7 @@
         <!-- Réalisation 4 -->
         <div class="card card--case-study">
           <div class="card__image">
-            <img src="assets/img/case-moncler.jpg" alt="Toile événementielle Moncler sur façade parisienne" loading="lazy">
+            <img src="assets/img/case-moncler.jpg" alt="Toile événementielle Moncler sur façade parisienne" loading="lazy" width="1500" height="831">
             <span class="card__tag card__tag--magenta">Toile événementielle</span>
           </div>
           <div class="card__body">
@@ -350,7 +354,7 @@
         <!-- Réalisation 5 -->
         <div class="card card--case-study">
           <div class="card__image">
-            <img src="assets/img/samsung-apres.jpg" alt="Toile Samsung sur le Pont Neuf à Paris" loading="lazy">
+            <img src="assets/img/samsung-apres.jpg" alt="Toile Samsung sur le Pont Neuf à Paris" loading="lazy" width="1920" height="1080">
             <span class="card__tag card__tag--cyan">Rénovation de patrimoine</span>
           </div>
           <div class="card__body">
@@ -362,7 +366,7 @@
         <!-- Réalisation 6 -->
         <div class="card card--case-study">
           <div class="card__image">
-            <img src="assets/img/expertise-lumineuse.jpg" alt="Publicité lumineuse Hitachi sur les toits de Paris" loading="lazy">
+            <img src="assets/img/expertise-lumineuse.jpg" alt="Publicité lumineuse Hitachi sur les toits de Paris" loading="lazy" width="1920" height="1280">
             <span class="card__tag card__tag--cyan">Publicité lumineuse</span>
           </div>
           <div class="card__body">
@@ -389,37 +393,37 @@
 
       <div class="logo-carousel" aria-label="Logos des marques clientes">
         <div class="logo-carousel__track">
-          <img class="logo-carousel__logo" src="assets/logos/Celine-logo.png" alt="Celine" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/LOreal-Logo.png" alt="L'Oréal" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Audemars_Piguet_logo.png" alt="Audemars Piguet" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Calvin-Klein-Logo.png" alt="Calvin Klein" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Ralph-Lauren-Logo.png" alt="Ralph Lauren" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Tommy_Hilfiger_Logo.svg.png" alt="Tommy Hilfiger" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Logo_NIKE.svg.png" alt="Nike" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Adidas_Logo.svg.png" alt="Adidas" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Ray-Ban-logo-EB2B2056D3-seeklogo.com.png" alt="Ray-Ban" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Audi_logo.svg.png" alt="Audi" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Air-France-Logo.png" alt="Air France" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Jaeger-LeCoultre.png" alt="Jaeger-LeCoultre" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/IsabelMarant_Logo_Feb2023_2.png" alt="Isabel Marant" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Roberto-Cavalli-logo.png" alt="Roberto Cavalli" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Volkswagen-Logo.png" alt="Volkswagen" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Nissan_2020_logo.svg.png" alt="Nissan" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Beats-Emblem.png" alt="Beats" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Casio-Logo.png" alt="Casio" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Logo-laposte.png" alt="La Poste" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Logo-Renault-thumb-1280x720-1-1024x576.png" alt="Renault" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Celine-logo.png" alt="Celine" loading="lazy" width="1280" height="720">
+          <img class="logo-carousel__logo" src="assets/logos/LOreal-Logo.png" alt="L'Oréal" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Audemars_Piguet_logo.png" alt="Audemars Piguet" loading="lazy" width="3295" height="907">
+          <img class="logo-carousel__logo" src="assets/logos/Calvin-Klein-Logo.png" alt="Calvin Klein" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Ralph-Lauren-Logo.png" alt="Ralph Lauren" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Tommy_Hilfiger_Logo.svg.png" alt="Tommy Hilfiger" loading="lazy" width="2560" height="143">
+          <img class="logo-carousel__logo" src="assets/logos/Logo_NIKE.svg.png" alt="Nike" loading="lazy" width="1200" height="428">
+          <img class="logo-carousel__logo" src="assets/logos/Adidas_Logo.svg.png" alt="Adidas" loading="lazy" width="800" height="552">
+          <img class="logo-carousel__logo" src="assets/logos/Ray-Ban-logo-EB2B2056D3-seeklogo.com.png" alt="Ray-Ban" loading="lazy" width="300" height="148">
+          <img class="logo-carousel__logo" src="assets/logos/Audi_logo.svg.png" alt="Audi" loading="lazy" width="2560" height="1563">
+          <img class="logo-carousel__logo" src="assets/logos/Air-France-Logo.png" alt="Air France" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Jaeger-LeCoultre.png" alt="Jaeger-LeCoultre" loading="lazy" width="500" height="500">
+          <img class="logo-carousel__logo" src="assets/logos/IsabelMarant_Logo_Feb2023_2.png" alt="Isabel Marant" loading="lazy" width="700" height="400">
+          <img class="logo-carousel__logo" src="assets/logos/Roberto-Cavalli-logo.png" alt="Roberto Cavalli" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Volkswagen-Logo.png" alt="Volkswagen" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Nissan_2020_logo.svg.png" alt="Nissan" loading="lazy" width="800" height="670">
+          <img class="logo-carousel__logo" src="assets/logos/Beats-Emblem.png" alt="Beats" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Casio-Logo.png" alt="Casio" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Logo-laposte.png" alt="La Poste" loading="lazy" width="567" height="425">
+          <img class="logo-carousel__logo" src="assets/logos/Logo-Renault-thumb-1280x720-1-1024x576.png" alt="Renault" loading="lazy" width="1024" height="576">
           <!-- Duplicata pour défilement infini (JS clone aussi) -->
-          <img class="logo-carousel__logo" src="assets/logos/Celine-logo.png" alt="Celine" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/LOreal-Logo.png" alt="L'Oréal" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Audemars_Piguet_logo.png" alt="Audemars Piguet" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Calvin-Klein-Logo.png" alt="Calvin Klein" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Ralph-Lauren-Logo.png" alt="Ralph Lauren" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Tommy_Hilfiger_Logo.svg.png" alt="Tommy Hilfiger" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Logo_NIKE.svg.png" alt="Nike" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Adidas_Logo.svg.png" alt="Adidas" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Ray-Ban-logo-EB2B2056D3-seeklogo.com.png" alt="Ray-Ban" loading="lazy">
-          <img class="logo-carousel__logo" src="assets/logos/Audi_logo.svg.png" alt="Audi" loading="lazy">
+          <img class="logo-carousel__logo" src="assets/logos/Celine-logo.png" alt="Celine" loading="lazy" width="1280" height="720">
+          <img class="logo-carousel__logo" src="assets/logos/LOreal-Logo.png" alt="L'Oréal" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Audemars_Piguet_logo.png" alt="Audemars Piguet" loading="lazy" width="3295" height="907">
+          <img class="logo-carousel__logo" src="assets/logos/Calvin-Klein-Logo.png" alt="Calvin Klein" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Ralph-Lauren-Logo.png" alt="Ralph Lauren" loading="lazy" width="3840" height="2160">
+          <img class="logo-carousel__logo" src="assets/logos/Tommy_Hilfiger_Logo.svg.png" alt="Tommy Hilfiger" loading="lazy" width="2560" height="143">
+          <img class="logo-carousel__logo" src="assets/logos/Logo_NIKE.svg.png" alt="Nike" loading="lazy" width="1200" height="428">
+          <img class="logo-carousel__logo" src="assets/logos/Adidas_Logo.svg.png" alt="Adidas" loading="lazy" width="800" height="552">
+          <img class="logo-carousel__logo" src="assets/logos/Ray-Ban-logo-EB2B2056D3-seeklogo.com.png" alt="Ray-Ban" loading="lazy" width="300" height="148">
+          <img class="logo-carousel__logo" src="assets/logos/Audi_logo.svg.png" alt="Audi" loading="lazy" width="2560" height="1563">
         </div>
       </div>
 
@@ -502,7 +506,7 @@
         <!-- Article 1 : Lacoste Grand Prix -->
         <article class="card card--blog">
           <div class="card__image">
-            <img src="assets/img/blog/lacoste-grand-prix.jpg" alt="Campagne Lacoste Play Big, Grand Prix de la Communication Extérieure 2025" loading="lazy">
+            <img src="assets/img/blog/lacoste-grand-prix.jpg" alt="Campagne Lacoste Play Big, Grand Prix de la Communication Extérieure 2025" loading="lazy" width="1999" height="2400">
             <span class="card__tag card__tag--magenta">Actualités</span>
           </div>
           <div class="card__body">
@@ -516,7 +520,7 @@
         <!-- Article 2 : Partenariat Clear Channel -->
         <article class="card card--blog">
           <div class="card__image">
-            <img src="assets/img/pdc-exterior.jpg" alt="Palais des Congrès de Paris" loading="lazy">
+            <img src="assets/img/pdc-exterior.jpg" alt="Palais des Congrès de Paris" loading="lazy" width="1999" height="2400">
             <span class="card__tag card__tag--cyan">Partenariats</span>
           </div>
           <div class="card__body">
@@ -530,7 +534,7 @@
         <!-- Article 3 : Transition écologique -->
         <article class="card card--blog">
           <div class="card__image">
-            <img src="assets/img/blog/transition-ecologique.jpg" alt="Transition écologique et publicité extérieure" loading="lazy">
+            <img src="assets/img/blog/transition-ecologique.jpg" alt="Transition écologique et publicité extérieure" loading="lazy" width="1999" height="2400">
             <span class="card__tag card__tag--cyan">RSE</span>
           </div>
           <div class="card__body">
@@ -544,7 +548,7 @@
         <!-- Article 4 : Johnny Hallyday -->
         <article class="card card--blog">
           <div class="card__image">
-            <img src="assets/img/blog/johnny-hallyday.jpg" alt="Hommage monumental à Johnny Hallyday, Église de la Madeleine" loading="lazy">
+            <img src="assets/img/blog/johnny-hallyday.jpg" alt="Hommage monumental à Johnny Hallyday, Église de la Madeleine" loading="lazy" width="1999" height="2400">
             <span class="card__tag card__tag--magenta">Événementiel</span>
           </div>
           <div class="card__body">
@@ -558,7 +562,7 @@
         <!-- Article 5 : Netflix Squid Game 2 -->
         <article class="card card--blog">
           <div class="card__image">
-            <img src="assets/img/case-netflix.jpg" alt="Toile monumentale Netflix Squid Game 2 à Paris" loading="lazy">
+            <img src="assets/img/case-netflix.jpg" alt="Toile monumentale Netflix Squid Game 2 à Paris" loading="lazy" width="1280" height="853">
             <span class="card__tag card__tag--magenta">Événementiel</span>
           </div>
           <div class="card__body">
@@ -572,7 +576,7 @@
         <!-- Article 6 : La Poste Colissimo 3D -->
         <article class="card card--blog">
           <div class="card__image">
-            <img src="assets/img/toiles-laposte-3d.jpg" alt="Installation 3D La Poste Colissimo à Neuilly" loading="lazy">
+            <img src="assets/img/toiles-laposte-3d.jpg" alt="Installation 3D La Poste Colissimo à Neuilly" loading="lazy" width="1999" height="2400">
             <span class="card__tag card__tag--cyan">Innovation</span>
           </div>
           <div class="card__body">
@@ -597,7 +601,7 @@
         <!-- Colonne 1 : Logo + tagline + réseaux -->
         <div class="footer__col">
           <a href="index.html" class="footer__logo" aria-label="Lioté — Accueil">
-            <img src="assets/img/logo-liote-dark.jpg" alt="Lioté">
+            <img src="assets/img/logo-liote-dark.jpg" alt="Lioté" width="1472" height="778">
           </a>
           <p class="footer__tagline">Scénographie urbaine &amp; publicité XXL depuis 1925.</p>
           <div class="footer__social">
@@ -663,8 +667,8 @@
   <!-- ============================================
        SCRIPTS
        ============================================ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
 
 </body>

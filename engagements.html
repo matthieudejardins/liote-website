@@ -8,11 +8,13 @@
   <meta property="og:title" content="Nos Engagements | Lioté — Communication responsable">
   <meta property="og:description" content="Préservation du patrimoine, upcycling, éco-conception : les engagements RSE de Lioté pour une publicité urbaine responsable.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://liote.fr/assets/img/og-liote.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta property="og:locale" content="fr_FR">
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0A1628">
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .callout-box {
@@ -99,6 +101,59 @@
       color: var(--cyan);
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://liote.fr/#organization",
+        "name": "Lioté",
+        "legalName": "Publicité Lumineuse et Affichage Lioté",
+        "url": "https://liote.fr",
+        "logo": "https://liote.fr/assets/img/logo-liote-dark.jpg",
+        "foundingDate": "1925",
+        "description": "Spécialiste de la publicité monumentale, des toiles événementielles, du DOOH et de la rénovation de patrimoine à Paris depuis 1925.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue Vauthier",
+          "postalCode": "92100",
+          "addressLocality": "Boulogne-Billancourt",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33146030173",
+        "email": "contact@liote.fr",
+        "sameAs": [
+          "https://www.instagram.com/liote_france/",
+          "https://www.linkedin.com/company/liote/",
+          "https://www.youtube.com/channel/UCb78wARZ6pF5m4UEA3snTDQ/"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://liote.fr/#localbusiness",
+        "name": "Lioté — Siège social",
+        "image": "https://liote.fr/assets/img/logo-liote-dark.jpg",
+        "url": "https://liote.fr/contact.html",
+        "telephone": "+33146030173",
+        "priceRange": "€€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue Vauthier",
+          "postalCode": "92100",
+          "addressLocality": "Boulogne-Billancourt",
+          "addressCountry": "FR"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 48.8369, "longitude": 2.2377 },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00", "closes": "18:00"
+        }]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -180,7 +235,7 @@
         <div class="callout-box" style="margin-bottom: 2.5rem;">
           <p><strong>Notre philosophie zéro déchet :</strong> certaines de nos toiles sont confiées à Bilum pour être upcyclées en accessoires fabriqués en France, dans des ateliers d'insertion professionnelle.</p>
         </div>
-        <img src="assets/img/bilum-loreal.jpg" alt="Accessoires upcyclés par Bilum à partir de bâches publicitaires L'Oréal" loading="lazy" style="width: 100%; border-radius: 12px;">
+        <img src="assets/img/bilum-loreal.jpg" alt="Accessoires upcyclés par Bilum à partir de bâches publicitaires L'Oréal" loading="lazy" style="width: 100%; border-radius: 12px;" width="1920" height="689">
         <p style="font-size: 13px; color: var(--text-muted); margin-top: 0.75rem; text-align: center;">Nos toiles monumentales trouvent une seconde vie grâce à Bilum.</p>
       </div>
     </div>
@@ -317,8 +372,8 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -500,3 +500,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 }); // end DOMContentLoaded
+
+
+/* ========================================================================
+   12. SERVICE WORKER REGISTRATION (offline cache)
+   ======================================================================== */
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}

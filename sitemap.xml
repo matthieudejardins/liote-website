@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Top-level pages -->
+  <url><loc>https://liote.fr/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://liote.fr/solutions.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liote.fr/toiles-evenementielles.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liote.fr/affichage-premium.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liote.fr/publicites-lumineuses.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liote.fr/realisations.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liote.fr/renovation-patrimoine.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://liote.fr/notre-histoire.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://liote.fr/equipe.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://liote.fr/engagements.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://liote.fr/contact.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://liote.fr/mentions-legales.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- Blog articles -->
+  <url><loc>https://liote.fr/blog/affichage-grand-format-paris.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/campagnes-affichage-monumental-paris.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/clear-channel-palais-des-congres.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/dooh-congres-salons.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/financer-ravalement-facade.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/histoire-publicite-urbaine-paris.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/johnny-hallyday.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/la-poste-colissimo-3d.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/lacoste-grand-prix.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/netflix-squid-game-2.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/nissan-juke-3d.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://liote.fr/blog/transition-ecologique.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+
+</urlset>

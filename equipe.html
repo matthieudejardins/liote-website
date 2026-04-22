@@ -7,14 +7,20 @@
   <!-- Title & Meta -->
   <title>Notre Equipe | Lioté</title>
   <meta name="description" content="Découvrez l'équipe Lioté : Alix Giraux (PDG) et Boris Morel (Directeur Commercial). Une équipe resserrée, agile et engagée au service de la communication extérieure.">
+  <meta property="og:title" content="Notre Equipe | Lioté">
+  <meta property="og:description" content="Découvrez l'équipe Lioté : Alix Giraux (PDG) et Boris Morel (Directeur Commercial). Une équipe resserrée, agile et engagée au service de la communication extérieure.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://liote.fr/assets/img/og-liote.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0A1628">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -69,6 +75,59 @@
       color: var(--white);
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://liote.fr/#organization",
+        "name": "Lioté",
+        "legalName": "Publicité Lumineuse et Affichage Lioté",
+        "url": "https://liote.fr",
+        "logo": "https://liote.fr/assets/img/logo-liote-dark.jpg",
+        "foundingDate": "1925",
+        "description": "Spécialiste de la publicité monumentale, des toiles événementielles, du DOOH et de la rénovation de patrimoine à Paris depuis 1925.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue Vauthier",
+          "postalCode": "92100",
+          "addressLocality": "Boulogne-Billancourt",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33146030173",
+        "email": "contact@liote.fr",
+        "sameAs": [
+          "https://www.instagram.com/liote_france/",
+          "https://www.linkedin.com/company/liote/",
+          "https://www.youtube.com/channel/UCb78wARZ6pF5m4UEA3snTDQ/"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://liote.fr/#localbusiness",
+        "name": "Lioté — Siège social",
+        "image": "https://liote.fr/assets/img/logo-liote-dark.jpg",
+        "url": "https://liote.fr/contact.html",
+        "telephone": "+33146030173",
+        "priceRange": "€€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue Vauthier",
+          "postalCode": "92100",
+          "addressLocality": "Boulogne-Billancourt",
+          "addressCountry": "FR"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 48.8369, "longitude": 2.2377 },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00", "closes": "18:00"
+        }]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -143,7 +202,7 @@
         <!-- Alix Giraux -->
         <div class="card team-card">
           <div class="team-photo" aria-label="Photo d'Alix Giraux">
-            <img src="assets/img/team-alix.png" alt="Alix Giraux" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            <img src="assets/img/team-alix.png" alt="Alix Giraux" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" width="938" height="586">
           </div>
           <h3>Alix Giraux</h3>
           <p class="team-role">Présidente-Directrice Générale</p>
@@ -159,7 +218,7 @@
         <!-- Boris Morel -->
         <div class="card team-card">
           <div class="team-photo" aria-label="Photo de Boris Morel">
-            <img src="assets/img/team-boris.png" alt="Boris Morel" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            <img src="assets/img/team-boris.png" alt="Boris Morel" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" width="938" height="587">
           </div>
           <h3>Boris Morel</h3>
           <p class="team-role">Directeur Commercial OOH & Toiles Événementielles</p>
@@ -259,8 +318,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
 
 </body>

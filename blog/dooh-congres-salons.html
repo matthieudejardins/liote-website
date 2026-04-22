@@ -8,11 +8,13 @@
   <meta property="og:title" content="DOOH aux congrès et salons : maximiser la visibilité de votre marque | Blog Lioté">
   <meta property="og:description" content="Comment utiliser le DOOH pour maximiser votre visibilité lors des congrès et salons au Palais des Congrès de Paris.">
   <meta property="og:type" content="article">
+  <meta property="og:image" content="https://liote.fr/assets/img/og-liote.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta property="og:locale" content="fr_FR">
-  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0A1628">
   <link rel="stylesheet" href="../css/styles.css">
   <style>
     .article-content { max-width: 720px; margin: 0 auto; }
@@ -27,6 +29,59 @@
     .article-hero-img { width: 100%; max-height: 480px; object-fit: cover; border-radius: 12px; margin-bottom: 2.5rem; }
     .article-back { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-ui); font-size: 14px; font-weight: 500; color: var(--magenta); margin-bottom: 2rem; }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://liote.fr/#organization",
+        "name": "Lioté",
+        "legalName": "Publicité Lumineuse et Affichage Lioté",
+        "url": "https://liote.fr",
+        "logo": "https://liote.fr/assets/img/logo-liote-dark.jpg",
+        "foundingDate": "1925",
+        "description": "Spécialiste de la publicité monumentale, des toiles événementielles, du DOOH et de la rénovation de patrimoine à Paris depuis 1925.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue Vauthier",
+          "postalCode": "92100",
+          "addressLocality": "Boulogne-Billancourt",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33146030173",
+        "email": "contact@liote.fr",
+        "sameAs": [
+          "https://www.instagram.com/liote_france/",
+          "https://www.linkedin.com/company/liote/",
+          "https://www.youtube.com/channel/UCb78wARZ6pF5m4UEA3snTDQ/"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://liote.fr/#localbusiness",
+        "name": "Lioté — Siège social",
+        "image": "https://liote.fr/assets/img/logo-liote-dark.jpg",
+        "url": "https://liote.fr/contact.html",
+        "telephone": "+33146030173",
+        "priceRange": "€€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue Vauthier",
+          "postalCode": "92100",
+          "addressLocality": "Boulogne-Billancourt",
+          "addressCountry": "FR"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 48.8369, "longitude": 2.2377 },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00", "closes": "18:00"
+        }]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Aller au contenu principal</a>
@@ -69,7 +124,7 @@
           <span>28 janvier 2026</span>
           <span>Par Lioté</span>
         </div>
-        <img src="../assets/img/blog/dooh-congres.jpg" alt="Enfilade d'écrans DOOH au Palais des Congrès de Paris" class="article-hero-img">
+        <img src="../assets/img/blog/dooh-congres.jpg" alt="Enfilade d'écrans DOOH au Palais des Congrès de Paris" class="article-hero-img" width="1200" height="674">
 
         <p>Les congrès et salons professionnels représentent des moments clés pour les marques qui souhaitent toucher une audience qualifiée, engagée et décisionnaire. Dans ce contexte, le <strong>Digital Out-Of-Home (DOOH)</strong> s'impose comme un levier de visibilité particulièrement efficace. Contrairement à l'affichage extérieur classique qui s'adresse à un public large et indifférencié, le DOOH en environnement de congrès permet de cibler précisément des professionnels en situation d'achat ou de veille, dans un cadre propice à la découverte de nouvelles solutions. Le Palais des Congrès de Paris, avec ses <strong>5 millions de visiteurs annuels</strong> et plus de <strong>170 événements par an</strong>, constitue l'un des théâtres les plus performants pour ce type de dispositif.</p>
 
@@ -157,8 +212,8 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

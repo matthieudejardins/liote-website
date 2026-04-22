@@ -1,0 +1,25 @@
+{
+  "name": "Lioté — Scénographie urbaine & publicité XXL",
+  "short_name": "Lioté",
+  "description": "Spécialiste de la publicité monumentale, des toiles événementielles, du DOOH et de la rénovation de patrimoine à Paris depuis 1925.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A1628",
+  "theme_color": "#0A1628",
+  "lang": "fr-FR",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/img/logo-liote-dark.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
