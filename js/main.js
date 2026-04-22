@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', () => {
     banner.innerHTML = `
       <p class="cookie-banner__text">
         Ce site utilise des cookies pour améliorer votre expérience de navigation.
-        <a href="${window.location.pathname.includes('/pages/') ? (window.location.pathname.includes('/blog/') ? '../mentions-legales.html' : 'mentions-legales.html') : 'pages/mentions-legales.html'}">En savoir plus</a>
+        <a href="${window.location.pathname.includes('/blog/') ? '../mentions-legales.html' : 'mentions-legales.html'}">En savoir plus</a>
       </p>
       <div class="cookie-banner__actions">
         <button class="cookie-banner__btn cookie-banner__btn--accept">Accepter</button>

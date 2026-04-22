@@ -37,20 +37,19 @@ site/
   assets/
     img/                  # Hero images, photos, favicon
     logos/                 # Client and partner logos
-  pages/
-    solutions.html        # Solutions overview (4 product lines)
-    toiles-evenementielles.html
-    affichage-premium.html
-    publicites-lumineuses.html
-    realisations.html     # Project gallery / case studies
-    proprietaires.html    # Page for building owners
-    renovation-patrimoine.html
-    notre-histoire.html   # Company history / about
-    equipe.html           # Team page
-    engagements.html      # CSR / sustainability commitments
-    blog.html             # Blog listing
-    contact.html          # Contact form + direct contacts
-    mentions-legales.html # Legal notices
+  solutions.html          # Solutions overview (4 product lines)
+  toiles-evenementielles.html
+  affichage-premium.html
+  publicites-lumineuses.html
+  realisations.html       # Project gallery / case studies
+  renovation-patrimoine.html
+  notre-histoire.html     # Company history / about
+  equipe.html             # Team page
+  engagements.html        # CSR / sustainability commitments
+  blog.html               # Blog listing
+  contact.html            # Contact form + direct contacts
+  mentions-legales.html   # Legal notices
+  blog/                   # Individual blog articles
 ```
 
 ## Deployment
@@ -65,7 +64,7 @@ No build command is required. Set the publish/output directory to `site`.
 
 ## Adding Images
 
-Image placeholders in the HTML reference paths like `../assets/img/hero-home.jpg`. To add real images:
+Image placeholders in the HTML reference paths like `assets/img/hero-home.jpg` (or `../assets/img/...` from blog articles). To add real images:
 
 1. Place image files in `site/assets/img/` (photos, heroes) or `site/assets/logos/` (client logos).
 2. Update the corresponding `src` attributes in the HTML files.
@@ -73,7 +72,7 @@ Image placeholders in the HTML reference paths like `../assets/img/hero-home.jpg
 
 ## Updating Content
 
-- **Page text**: edit the HTML files directly in `site/pages/`. Each page is self-contained.
+- **Page text**: edit the HTML files directly in `site/`. Each page is self-contained.
 - **Navigation**: the nav and footer are duplicated in each HTML file. Update all pages when changing nav links.
 - **Styles**: all styles live in `site/css/styles.css`. CSS custom properties (variables) are defined at the top of the file for colors, fonts, and spacing.
 - **Animations**: GSAP logic is in `site/js/main.js`.
