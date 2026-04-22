@@ -1321,6 +1321,7 @@ p {
 
 .loading__logo {
   max-width: 300px;
+  height: auto;
   animation: pulse 1.5s ease-in-out infinite;
 }
 
