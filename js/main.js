@@ -449,15 +449,35 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ========================================================================
-     11. COOKIE CONSENT BANNER
+     11. COOKIE CONSENT BANNER + GOOGLE ANALYTICS (consent-gated)
      ======================================================================== */
 
-  if (!localStorage.getItem('liote-cookies')) {
+  const GA_MEASUREMENT_ID = 'G-HFF55K8GKP';
+
+  function loadGoogleAnalytics() {
+    if (window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_MEASUREMENT_ID);
+  }
+
+  const consent = localStorage.getItem('liote-cookies');
+
+  if (consent === 'accepted') {
+    loadGoogleAnalytics();
+  } else if (!consent) {
     const banner = document.createElement('div');
     banner.className = 'cookie-banner cookie-banner--visible';
     banner.innerHTML = `
       <p class="cookie-banner__text">
-        Ce site utilise des cookies pour améliorer votre expérience de navigation.
+        Ce site utilise Google Analytics pour mesurer son audience de manière anonyme.
+        Aucun cookie n'est déposé sans votre accord.
         <a href="${window.location.pathname.includes('/blog/') ? '../mentions-legales.html' : 'mentions-legales.html'}">En savoir plus</a>
       </p>
       <div class="cookie-banner__actions">
@@ -470,6 +490,7 @@ document.addEventListener('DOMContentLoaded', () => {
     banner.querySelector('.cookie-banner__btn--accept').addEventListener('click', () => {
       localStorage.setItem('liote-cookies', 'accepted');
       banner.classList.remove('cookie-banner--visible');
+      loadGoogleAnalytics();
     });
 
     banner.querySelector('.cookie-banner__btn--decline').addEventListener('click', () => {
