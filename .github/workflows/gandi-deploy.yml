@@ -1,0 +1,67 @@
+name: Deploy to Gandi + Purge Cloudflare
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Avoid two parallel deploys overwriting each other
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Stage files for deploy (exclude repo metadata)
+        run: |
+          mkdir -p _deploy
+          rsync -av \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='_deploy' \
+            --exclude='README.md' \
+            --exclude='.DS_Store' \
+            --exclude='.gitignore' \
+            ./ ./_deploy/
+          echo "Files to deploy:"
+          find _deploy -type f | wc -l
+
+      - name: Deploy to Gandi via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.GANDI_SFTP_HOST }}
+          username: ${{ secrets.GANDI_SFTP_USER }}
+          password: ${{ secrets.GANDI_SFTP_PASSWORD }}
+          port: 22
+          local_path: './_deploy/*'
+          remote_path: ${{ secrets.GANDI_SFTP_PATH }}
+          sftp_only: true
+
+      - name: Purge Cloudflare cache
+        if: success()
+        run: |
+          response=$(curl -sS -w "\n%{http_code}" -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}')
+          body=$(echo "$response" | sed '$d')
+          code=$(echo "$response" | tail -n1)
+          echo "$body"
+          if [ "$code" != "200" ]; then
+            echo "Cloudflare purge failed (HTTP $code)"
+            exit 1
+          fi
+          echo "Cloudflare cache purged successfully"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Deploy or Cloudflare purge failed. Check the steps above."
