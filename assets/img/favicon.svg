@@ -2,14 +2,18 @@
   <!-- Brand navy rounded square -->
   <rect width="64" height="64" rx="12" fill="#111D33"/>
 
-  <!-- Bold serif L (uses system serif font — Cormorant-like fallback) -->
-  <text x="32" y="50"
-        font-family="Georgia, 'Times New Roman', serif"
-        font-weight="700"
-        font-size="48"
-        fill="#FFFFFF"
-        text-anchor="middle">L</text>
+  <!-- Stylised serif "L" — drawn with rects so all browsers (incl. Chrome) render it -->
+  <g fill="#FFFFFF">
+    <!-- Top serif -->
+    <rect x="14" y="14" width="20" height="3"/>
+    <!-- Vertical stem -->
+    <rect x="20" y="14" width="8" height="32"/>
+    <!-- Foot (horizontal base) -->
+    <rect x="20" y="44" width="30" height="6"/>
+    <!-- Right-end serif of foot -->
+    <rect x="46" y="40" width="4" height="10"/>
+  </g>
 
-  <!-- Magenta accent dot -->
-  <circle cx="50" cy="17" r="5" fill="#C91A7A"/>
+  <!-- Magenta brand accent dot -->
+  <circle cx="51" cy="17" r="5" fill="#C91A7A"/>
 </svg>
