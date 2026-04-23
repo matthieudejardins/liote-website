@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Brand navy rounded square -->
+  <rect width="64" height="64" rx="12" fill="#111D33"/>
+
+  <!-- Bold serif L (uses system serif font — Cormorant-like fallback) -->
+  <text x="32" y="50"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-weight="700"
+        font-size="48"
+        fill="#FFFFFF"
+        text-anchor="middle">L</text>
+
+  <!-- Magenta accent dot -->
+  <circle cx="50" cy="17" r="5" fill="#C91A7A"/>
+</svg>
