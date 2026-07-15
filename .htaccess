@@ -13,6 +13,9 @@
   # Canonical host: redirect www -> apex (remove next 2 lines if you prefer www)
   RewriteCond %{HTTP_HOST} ^www\.liote\.fr$ [NC]
   RewriteRule ^ https://liote.fr%{REQUEST_URI} [L,R=301]
+
+  # Legacy blog URL: clear-channel renamed to cityz-media
+  RewriteRule ^blog/clear-channel-palais-des-congres\.html$ /blog/cityz-media-palais-des-congres.html [L,R=301]
 </IfModule>
 
 # --------------------------------------------------------------

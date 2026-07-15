@@ -1,6 +1,6 @@
 # Liote Website
 
-Corporate website for **Liote** (Publicite Lumineuse et Affichage Liote), a Paris-based OOH/DOOH advertising company specializing in monumental event wraps, illuminated signage, and premium digital displays at the Palais des Congres de Paris. Founded in 1920.
+Corporate website for **Liote** (Publicite Lumineuse et Affichage Liote), a Paris-based OOH/DOOH advertising company specializing in monumental event wraps, illuminated signage, and premium digital displays at the Palais des Congres de Paris. Founded in 1925.
 
 ## Tech Stack
 

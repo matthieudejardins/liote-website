@@ -989,6 +989,41 @@ p {
   color: var(--text-muted);
 }
 
+.timeline__figure {
+  margin: 1.25rem 0 0;
+  max-width: 520px;
+}
+
+.timeline__figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid var(--border-dark);
+}
+
+.timeline__figure figcaption {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.timeline__figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  max-width: 640px;
+}
+
+.timeline__figures .timeline__figure {
+  flex: 1 1 240px;
+  margin-top: 0;
+  max-width: none;
+}
+
 
 /* ==========================================================================
    13. FAQ ACCORDION
