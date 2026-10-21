@@ -19,17 +19,17 @@
   # Legacy blog URL: clear-channel renamed to cityz-media
   RewriteRule ^blog/clear-channel-palais-des-congres\.html$ https://liote.fr/blog/cityz-media-palais-des-congres.html [L,R=301]
 
-  # Legacy Squarespace URLs (old www.liote.fr sitemap, 21/10/2026)
+  # Legacy Squarespace URLs (old www.liote.fr sitemap + menu, 21/10/2026)
   RewriteRule ^accueil/?$ https://liote.fr/ [L,R=301]
-  RewriteRule ^test-hp/?$ https://liote.fr/ [L,R=301]
-  RewriteRule ^nouveau-dossier/?$ https://liote.fr/ [L,R=301]
+  RewriteRule ^(test-hp|nouvelle-page-39)/?$ https://liote.fr/ [L,R=301]
   RewriteRule ^contact/?$ https://liote.fr/contact.html [L,R=301]
-  RewriteRule ^(histoire-publicite-marques|notre-histoire-1)/?$ https://liote.fr/notre-histoire.html [L,R=301]
+  RewriteRule ^(histoire-publicite-marques|notre-histoire-1|nouvelle-page-25|murs-peints-galerie)/?$ https://liote.fr/notre-histoire.html [L,R=301]
+  RewriteRule ^nouvelle-page-1/?$ https://liote.fr/realisations.html [L,R=301]
   RewriteRule ^liote/patrimoine/toiles-publicitaires/?$ https://liote.fr/renovation-patrimoine.html [L,R=301]
   RewriteRule ^activite-liote/toile-evenementielle/?$ https://liote.fr/toiles-evenementielles.html [L,R=301]
-  RewriteRule ^test-galerie-toiles-event/?$ https://liote.fr/toiles-evenementielles.html [L,R=301]
+  RewriteRule ^(test-galerie-toiles-event|nouveau-dossier|nouvelle-page-2)/?$ https://liote.fr/toiles-evenementielles.html [L,R=301]
   RewriteRule ^activite-liote/affichage-premium-palais-des-congres-paris/?$ https://liote.fr/affichage-premium.html [L,R=301]
-  RewriteRule ^test-palais-galerie/?$ https://liote.fr/affichage-premium.html [L,R=301]
+  RewriteRule ^(test-palais-galerie|affichage-xxl-outdoor|nouvelle-page-40|nouvelle-page-96)/?$ https://liote.fr/affichage-premium.html [L,R=301]
   RewriteRule ^activite-liote/publicite-lumineuse/?$ https://liote.fr/publicites-lumineuses.html [L,R=301]
   RewriteRule ^activite-liote/?$ https://liote.fr/solutions.html [L,R=301]
 </IfModule>
