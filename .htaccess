@@ -3,26 +3,43 @@
 # =============================================================
 
 # --------------------------------------------------------------
-# 1. Force HTTPS
+# 1. HTTPS + redirects
 # --------------------------------------------------------------
+# HTTP -> HTTPS is NOT done here: on Gandi Web Hosting, TLS ends at the web
+# accelerator, so %{HTTPS} is never "on" in Apache (redirect loop). It is set
+# on the vhost instead (https_strategy = redirect_HTTP_to_HTTPS).
+# www.liote.fr -> liote.fr is a Gandi Web Forwarding (the plan allows 1 vhost).
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{HTTPS} !=on
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Canonical host: redirect www -> apex (remove next 2 lines if you prefer www)
+  # Canonical host: redirect www -> apex (only reached if www ever hits this vhost)
   RewriteCond %{HTTP_HOST} ^www\.liote\.fr$ [NC]
   RewriteRule ^ https://liote.fr%{REQUEST_URI} [L,R=301]
 
   # Legacy blog URL: clear-channel renamed to cityz-media
   RewriteRule ^blog/clear-channel-palais-des-congres\.html$ /blog/cityz-media-palais-des-congres.html [L,R=301]
+
+  # Legacy Squarespace URLs (old www.liote.fr sitemap, 21/10/2026)
+  RewriteRule ^accueil/?$ / [L,R=301]
+  RewriteRule ^test-hp/?$ / [L,R=301]
+  RewriteRule ^nouveau-dossier/?$ / [L,R=301]
+  RewriteRule ^contact/?$ /contact.html [L,R=301]
+  RewriteRule ^(histoire-publicite-marques|notre-histoire-1)/?$ /notre-histoire.html [L,R=301]
+  RewriteRule ^liote/patrimoine/toiles-publicitaires/?$ /renovation-patrimoine.html [L,R=301]
+  RewriteRule ^activite-liote/toile-evenementielle/?$ /toiles-evenementielles.html [L,R=301]
+  RewriteRule ^test-galerie-toiles-event/?$ /toiles-evenementielles.html [L,R=301]
+  RewriteRule ^activite-liote/affichage-premium-palais-des-congres-paris/?$ /affichage-premium.html [L,R=301]
+  RewriteRule ^test-palais-galerie/?$ /affichage-premium.html [L,R=301]
+  RewriteRule ^activite-liote/publicite-lumineuse/?$ /publicites-lumineuses.html [L,R=301]
+  RewriteRule ^activite-liote/?$ /solutions.html [L,R=301]
 </IfModule>
 
 # --------------------------------------------------------------
 # 2. Security headers
 # --------------------------------------------------------------
 <IfModule mod_headers.c>
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+  # No includeSubDomains: webmail.liote.fr / blog.liote.fr have no valid HTTPS
+  Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
@@ -55,10 +72,10 @@
   # HTML — short cache, must revalidate
   ExpiresByType text/html                     "access plus 0 seconds"
 
-  # CSS / JS — 1 year (busted via filename versioning if needed)
-  ExpiresByType text/css                      "access plus 1 year"
-  ExpiresByType application/javascript        "access plus 1 year"
-  ExpiresByType text/javascript               "access plus 1 year"
+  # CSS / JS — 1 hour (file names are not versioned, edits must show up)
+  ExpiresByType text/css                      "access plus 1 hour"
+  ExpiresByType application/javascript        "access plus 1 hour"
+  ExpiresByType text/javascript               "access plus 1 hour"
 
   # Images / video — 1 year
   ExpiresByType image/jpeg                    "access plus 1 year"
@@ -77,9 +94,14 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-  # Immutable Cache-Control for fingerprintable assets
-  <FilesMatch "\.(jpe?g|png|gif|webp|svg|ico|mp4|webm|woff2|woff|css|js)$">
+  # Long cache for media and fonts
+  <FilesMatch "\.(jpe?g|png|gif|webp|svg|ico|mp4|webm|woff2|woff)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Short cache for CSS / JS (not versioned)
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=3600"
   </FilesMatch>
 
   # No cache for HTML
